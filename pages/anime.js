@@ -57,6 +57,8 @@ export default function FavoriteAnime() {
           Bokutachi wa Mada Shiranai.)
         </li>
         <li key="29">聲の形 (Koe no Katachi)</li>
+        <li key="30">ガールズ&パンツァー (Girls & Panzer)</li>
+        <li key="31">はねバド！ (Hanebado!)</li>
       </ul>
     </Layout>
   );
