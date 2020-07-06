@@ -22,7 +22,7 @@ export default function Home() {
         <li key="2">Nationality: Japanese</li>
       </ul>
 
-      <h3>My favorite Anime</h3>
+      <h3>Favorite Anime</h3>
       <ul>
         <li key="1">空の境界 (Kara no Kyoukai)</li>
         <li key="2">氷菓 (Hyouka)</li>
