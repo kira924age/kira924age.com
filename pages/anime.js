@@ -8,7 +8,7 @@ export default function FavoriteAnime() {
       <Head>
         <title>My favorite Anime</title>
       </Head>
-      <h2>My favorite Anime</h2>
+      <h2>Favorite Anime</h2>
       Following list shows my favorite anime.
       <ul>
         <li key="1">空の境界 (Kara no Kyoukai)</li>
