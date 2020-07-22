@@ -6,7 +6,7 @@ export default function FavoriteAnime() {
   return (
     <Layout>
       <Head>
-        <title>My favorite Anime</title>
+        <title>Favorite Anime</title>
       </Head>
       <h2>Favorite Anime</h2>
       Following list shows my favorite anime.
@@ -15,7 +15,7 @@ export default function FavoriteAnime() {
         <li key="2">氷菓 (Hyouka)</li>
         <li key="3">少女終末旅行 (Shoujo Shuumatsu Ryokou)</li>
         <li key="4">幸腹グラフィティ (Koufuku Graffiti)</li>
-        <li key="5">銀の匙 Silver Spoon</li>
+        <li key="5">銀の匙 Silver Spoon (Gin no Saji Silver Spoon)</li>
         <li key="6">私に天使が舞い降りた! (Watashi ni Tenshi ga Maiorita!)</li>
         <li key="7">Fate/Zero</li>
         <li key="8">SHIROBAKO</li>
@@ -64,6 +64,7 @@ export default function FavoriteAnime() {
         <li key="34">東京マグニチュード8.0 (Tokyo Magnitude 8.0)</li>
         <li key="35">NEW GAME!</li>
         <li key="36">コードギアス (Code Geass)</li>
+        <li key="37">ARIA</li>
       </ul>
     </Layout>
   );
