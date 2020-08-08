@@ -15,14 +15,11 @@ export default function FavoriteAnime() {
         <li key="2">氷菓 (Hyouka)</li>
         <li key="3">少女終末旅行 (Shoujo Shuumatsu Ryokou)</li>
         <li key="4">幸腹グラフィティ (Koufuku Graffiti)</li>
-        <li key="5">銀の匙 Silver Spoon (Gin no Saji Silver Spoon)</li>
-        <li key="6">私に天使が舞い降りた! (Watashi ni Tenshi ga Maiorita!)</li>
-        <li key="7">Fate/Zero</li>
-        <li key="8">SHIROBAKO</li>
-        <li key="9">
-          秒速5センチメートル (5 Centimeters per Second a chain of short stories
-          about their distance)
-        </li>
+        <li key="5">しゅごキャラ！ (Shugo Chara!)</li>
+        <li key="6">銀の匙 Silver Spoon (Gin no Saji Silver Spoon)</li>
+        <li key="7">私に天使が舞い降りた! (Watashi ni Tenshi ga Maiorita!)</li>
+        <li key="8">Fate/Zero</li>
+        <li key="9">SHIROBAKO</li>
         <li key="10">STEINS;GATE</li>
         <li key="11">のんのんびより (Non Non Biyori)</li>
         <li key="12">魔法少女まどか☆マギカ (Mahou Shoujo Madoka Magica)</li>
@@ -65,6 +62,10 @@ export default function FavoriteAnime() {
         <li key="35">NEW GAME!</li>
         <li key="36">コードギアス (Code Geass)</li>
         <li key="37">ARIA</li>
+        <li key="38">
+          秒速5センチメートル (5 Centimeters per Second a chain of short stories
+          about their distance)
+        </li>
       </ul>
     </Layout>
   );
