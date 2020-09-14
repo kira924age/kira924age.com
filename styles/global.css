@@ -1,5 +1,7 @@
 html,
 body {
+  background-color: #061F2F;
+  color: #d3d4d4;
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
@@ -8,16 +10,21 @@ body {
   font-size: 18px;
 }
 
+h3 {
+  color: #fff;
+}
+
 * {
   box-sizing: border-box;
 }
 
 a {
-  color: #0070f3;
+  color: #9cd7f7;
   text-decoration: none;
 }
 
 a:hover {
+  color: #2089C4;
   text-decoration: underline;
 }
 
