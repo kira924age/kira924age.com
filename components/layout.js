@@ -1,20 +1,23 @@
-import Head from 'next/head'
-import styles from './layout.module.css'
-import utilStyles from '../styles/utils.module.css'
-import Link from 'next/link'
+import Head from "next/head";
+import styles from "./layout.module.css";
+import utilStyles from "../styles/utils.module.css";
+import Link from "next/link";
 
-const name = 'kira924age'
-export const siteTitle = 'kira924age.com'
+const name = "kira924age";
+export const siteTitle = "kira924age.com";
 
 export default function Layout({ children, home }) {
   return (
     <div className={styles.container}>
       <Head>
-        <link rel="icon" href="/favicon.ico" />
-        <meta
-          name="description"
-          content="website of kira924age"
+        <link rel="icon" type="image/png" href="/favicon.png" />
+        <link
+          rel="apple-touch-icon"
+          href="/apple-touch-icon.png"
+          size="192x192"
         />
+
+        <meta name="description" content="website of kira924age" />
         <meta
           property="og:image"
           content={`https://og-image.now.sh/${encodeURI(
@@ -26,16 +29,16 @@ export default function Layout({ children, home }) {
       </Head>
 
       {home && (
-      <header className={styles.header}>
-        <>
-          <img
-            src="/images/profile.png"
-            className={`${styles.headerHomeImage} ${utilStyles.borderCircle}`}
-            alt={name}
-          />
-          <h1 className={utilStyles.headingXl}>{name}</h1>
-        </>
-      </header>
+        <header className={styles.header}>
+          <>
+            <img
+              src="/images/profile.png"
+              className={`${styles.headerHomeImage} ${utilStyles.borderCircle}`}
+              alt={name}
+            />
+            <h1 className={utilStyles.headingXl}>{name}</h1>
+          </>
+        </header>
       )}
 
       <main>{children}</main>
@@ -47,5 +50,5 @@ export default function Layout({ children, home }) {
         </div>
       )}
     </div>
-  )
+  );
 }
