@@ -10,7 +10,7 @@ export default function Layout({ children, home }) {
   return (
     <div className={styles.container}>
       <Head>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" href="/favicon.png" />
         <link
           rel="apple-touch-icon"
           href="/apple-touch-icon.png"
