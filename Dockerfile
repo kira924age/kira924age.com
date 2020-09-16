@@ -5,17 +5,20 @@ FROM node:current-slim
 WORKDIR /usr/src/app
 
 # Copy the file from your host to your current location.
-COPY package.json .
+COPY package*.json ./
 
 # Run the command inside your image filesystem.
 RUN npm install
+
+# Bundle app source
+COPY . .
+
+# Building app
+RUN npm run build
 
 # Add metadata to the image to describe which port the container is listening on at runtime.
 EXPOSE 1234
 
 # Run the specified command within the container.
-CMD [ "npm", "run", "build" ]
-CMD [ "npm", "run", "start" ]
-
-# Copy the rest of your app's source code from your host to your image filesystem.
-COPY . .
+# CMD [ "npm", "run", "dev" ]
+CMD [ "npm", "start" ]
