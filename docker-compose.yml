@@ -1,4 +1,4 @@
-version: "3.8"
+version: "3"
 services:
   kira:
     image: kira924age/kira924age.com:latest
