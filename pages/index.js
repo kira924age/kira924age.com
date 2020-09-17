@@ -41,7 +41,7 @@ export default function Home() {
           Twitter: <a href="https://twitter.com/kira924age">@kira924age</a>
         </li>
         <li key="2">
-          Github: <a href="https://github.com/kira924age">kira924age</a>
+          GitHub: <a href="https://github.com/kira924age">kira924age</a>
         </li>
         <li key="3">
           Hatena Blog1:{" "}
