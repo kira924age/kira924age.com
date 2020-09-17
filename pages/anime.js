@@ -69,6 +69,7 @@ export default function FavoriteAnime() {
         <li key="39">ヨルムンガンド (Jormungand)</li>
         <li key="40">有頂天家族 (Uchouten Kazoku)</li>
         <li key="41">この世界の片隅に</li>
+        <li key="42">Fate/stay night</li>
       </ul>
     </Layout>
   );
