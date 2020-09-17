@@ -1,0 +1,13 @@
+version: "3.8"
+services:
+  kira:
+    image: kira924age/kira924age.com:latest
+    ports:
+      - "1234:1234" # connect local:1234 and docker:1234
+    deploy:
+      replicas: 1 # number of prosess
+      update_config:
+        parallelism: 2
+        delay: 10s
+      restart_policy:
+        condition: on-failure
