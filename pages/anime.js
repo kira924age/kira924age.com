@@ -72,6 +72,7 @@ export default function FavoriteAnime() {
         <li key="42">Fate/stay night</li>
         <li key="43">BLACK LAGOON</li>
         <li key="44">ViVid Strike!</li>
+        <li key="45">ダンベル何キロ持てる？ (Dumbbell Nan Kilo Moteru?)</li>
       </ul>
     </Layout>
   );
