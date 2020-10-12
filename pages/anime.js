@@ -38,9 +38,11 @@ export default function FavoriteAnime() {
           クレヨンしんちゃん 嵐を呼ぶ モーレツ!オトナ帝国の逆襲 (Eiga Crayon
           Shin-chan: Arashi wo Yobu Mouretsu! Otona Teikoku Gyakushuu)
         </li>
-        <li key="22">魔女の宅急便 (Majo no Takkyuubin)</li>
-        <li key="23">もののけ姫 (Mononoke Hime)</li>
-        <li key="24">三ツ星カラーズ (Mitsuboshi Colors)</li>
+        <li key="22">
+          クレヨンしんちゃん 電撃!ブタのヒヅメ大作戦 (Eiga Crayon Shin-chan: Dengeki! Buta no Hizume Daisakusen)
+        </li>
+        <li key="23">魔女の宅急便 (Majo no Takkyuubin)</li>
+        <li key="24">もののけ姫 (Mononoke Hime)</li>
         <li key="25">
           キノの旅 -the Beautiful World- the Animated Series (Kino's Journey
           -the Beautiful World- the Animated Series)
@@ -73,6 +75,7 @@ export default function FavoriteAnime() {
         <li key="43">BLACK LAGOON</li>
         <li key="44">ViVid Strike!</li>
         <li key="45">ダンベル何キロ持てる？ (Dumbbell Nan Kilo Moteru?)</li>
+        <li key="46">三ツ星カラーズ (Mitsuboshi Colors)</li>
       </ul>
     </Layout>
   );
