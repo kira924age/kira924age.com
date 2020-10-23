@@ -76,6 +76,7 @@ export default function FavoriteAnime() {
         <li key="44">ViVid Strike!</li>
         <li key="45">ダンベル何キロ持てる？ (Dumbbell Nan Kilo Moteru?)</li>
         <li key="46">三ツ星カラーズ (Mitsuboshi Colors)</li>
+        <li key="47">HUNTER×HUNTER</li>
       </ul>
     </Layout>
   );
