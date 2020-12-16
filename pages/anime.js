@@ -77,6 +77,8 @@ export default function FavoriteAnime() {
         <li key="45">ダンベル何キロ持てる？ (Dumbbell Nan Kilo Moteru?)</li>
         <li key="46">三ツ星カラーズ (Mitsuboshi Colors)</li>
         <li key="47">HUNTER×HUNTER</li>
+        <li key="48">ばらかもん (Barakamon)</li>
+        <li key="49">普通の女子校生が【ろこどる】やってみた。 (Futsuu no Joshikousei ga [Locodol] Yattemita.)</li>
       </ul>
     </Layout>
   );
