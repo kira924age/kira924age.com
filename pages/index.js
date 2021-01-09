@@ -35,6 +35,11 @@ export default function Home() {
         </Link>
       </ul>
 
+      <h3>Favorite Comics</h3>
+      <ul>
+        <li key="1">ふたりエスケープ (Futari Escape)</li>
+      </ul>
+
       <h3>Links</h3>
       <ul>
         <li key="1">
