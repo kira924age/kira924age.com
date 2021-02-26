@@ -28,7 +28,7 @@ export default function Home() {
         <li key="2">氷菓 (Hyouka)</li>
         <li key="3">少女終末旅行 (Shoujo Shuumatsu Ryokou)</li>
         <li key="4">幸腹グラフィティ (Koufuku Graffiti)</li>
-        <li key="5">しゅごキャラ！ (Shugo Chara!)</li>
+        <li key="5">魔法少女まどか☆マギカ (Mahou Shoujo Madoka Magica)</li>
 
         <Link href="anime">
           <a>read more</a>
@@ -39,6 +39,7 @@ export default function Home() {
       <ul>
         <li key="1">ふたりエスケープ (Futari Escape)</li>
         <li key="2">NEW GAME!</li>
+        <li key="3">とある科学の超電磁砲 (Toaru Kagaku no Railgun)</li>
       </ul>
 
       <h3>Links</h3>

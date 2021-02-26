@@ -15,14 +15,14 @@ export default function FavoriteAnime() {
         <li key="2">氷菓 (Hyouka)</li>
         <li key="3">少女終末旅行 (Shoujo Shuumatsu Ryokou)</li>
         <li key="4">幸腹グラフィティ (Koufuku Graffiti)</li>
-        <li key="5">しゅごキャラ！ (Shugo Chara!)</li>
+        <li key="5">魔法少女まどか☆マギカ (Mahou Shoujo Madoka Magica)</li>
         <li key="6">銀の匙 Silver Spoon (Gin no Saji Silver Spoon)</li>
         <li key="7">私に天使が舞い降りた! (Watashi ni Tenshi ga Maiorita!)</li>
         <li key="8">Fate/Zero</li>
         <li key="9">SHIROBAKO</li>
         <li key="10">STEINS;GATE</li>
         <li key="11">のんのんびより (Non Non Biyori)</li>
-        <li key="12">魔法少女まどか☆マギカ (Mahou Shoujo Madoka Magica)</li>
+        <li key="12">しゅごキャラ！ (Shugo Chara!)</li>
         <li key="13">刀語 (Katanagatari)</li>
         <li key="14">物語シリーズ (Monogatari Series)</li>
         <li key="15">響け！ユーフォニアム (Sound! Euphonium)</li>
