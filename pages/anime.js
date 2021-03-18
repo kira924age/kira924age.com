@@ -79,6 +79,7 @@ export default function FavoriteAnime() {
         <li key="47">HUNTER×HUNTER</li>
         <li key="48">ばらかもん (Barakamon)</li>
         <li key="49">普通の女子校生が【ろこどる】やってみた。 (Futsuu no Joshikousei ga [Locodol] Yattemita.)</li>
+        <li key="50">ノーゲーム・ノーライフ (NO GAME NO LIFE)</li>
       </ul>
     </Layout>
   );
