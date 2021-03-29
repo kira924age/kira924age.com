@@ -40,6 +40,7 @@ export default function Home() {
         <li key="1">ふたりエスケープ (Futari Escape)</li>
         <li key="2">NEW GAME!</li>
         <li key="3">とある科学の超電磁砲 (Toaru Kagaku no Railgun)</li>
+        <li key="4">はねバド！ (Hanebado!)</li>
       </ul>
 
       <h3>Links</h3>
