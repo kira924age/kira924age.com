@@ -25,7 +25,7 @@ export default function Home() {
       <h3>Favorite Anime</h3>
       <ul>
         <li key="1">空の境界 (Kara no Kyoukai)</li>
-        <li key="2">氷菓 (Hyouka)</li>
+        <li key="2">ローリング☆ガールズ (THE ROLLING GIRLS)</li>
         <li key="3">少女終末旅行 (Shoujo Shuumatsu Ryokou)</li>
         <li key="4">幸腹グラフィティ (Koufuku Graffiti)</li>
         <li key="5">魔法少女まどか☆マギカ (Mahou Shoujo Madoka Magica)</li>
