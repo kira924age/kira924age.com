@@ -30,17 +30,81 @@ export default function Home() {
         <li key="4">幸腹グラフィティ (Koufuku Graffiti)</li>
         <li key="5">魔法少女まどか☆マギカ (Mahou Shoujo Madoka Magica)</li>
 
-        <Link href="anime">
+        <Link href="/anime">
           <a>read more</a>
         </Link>
       </ul>
 
       <h3>Favorite Comics</h3>
       <ul>
-        <li key="1">ふたりエスケープ (Futari Escape)</li>
-        <li key="2">NEW GAME!</li>
-        <li key="3">とある科学の超電磁砲 (Toaru Kagaku no Railgun)</li>
+        <li key="1">とある科学の超電磁砲 (Toaru Kagaku no Railgun)</li>
+        <li key="2">ふたりエスケープ (Futari Escape)</li>
+        <li key="3">NEW GAME!</li>
         <li key="4">はねバド！ (Hanebado!)</li>
+      </ul>
+
+      <h3>Favorite Novels</h3>
+      <ul>
+        <li key="1">神様のメモ帳 (Heaven's Memo Pad)</li>
+        <ul>
+          <li key="1">Written by: 杉井光 (Hikaru Sugii)</li>
+          <li key="2">Illustrated by: 岸田メル (Mel Kishida)</li>
+        </ul>
+        <li key="2">さくら荘のペットな彼女 (The Pet Girl of Sakurasou)</li>
+        <ul>
+          <li key="1">Written by: 鴨志田一 (Hajime Kamoshida)</li>
+          <li key="2">Illustrated by: 溝口ケージ (Keiji Mizoguchi)</li>
+        </ul>
+      </ul>
+
+      <h3>Favorite Songs</h3>
+      <ul>
+        <li key="1">STONES</li>
+        <ul>
+          <li key="1">Vocal: 鴨川ロッカーズ (Kamogawa Rockers)</li>
+          <li key="2">
+            Remarks: This song is background music of "ローリング☆ガールズ(THE
+            ROLLING GIRLS)" at episode 8.
+          </li>
+        </ul>
+
+        <li key="2">ヨミガエレ (Yomigaere)</li>
+        <ul>
+          <li key="1">Vocal: フランシュシュ (Franchouchou)</li>
+          <li key="2">
+            Remarks: This song is background music of "ゾンビランドサガ (Zombie
+            Land Saga)" at episode 2 and 12.
+          </li>
+        </ul>
+
+        <li key="3">傷跡 (Kizuato)</li>
+        <ul>
+          <li key="1">Vocal: Kalafina</li>
+          <li key="2">
+            Remarks: This song is the ending theme music of "空の境界 第三章
+            痛覚残留 (The Garden of Sinners: Remaining Sense of Pain)".
+          </li>
+        </ul>
+
+        <li key="4">夕立方程式 (Yuudachi Houteishiki)</li>
+        <ul>
+          <li key="1">
+            Vocal: 老倉育 (上麻里奈) (Sodatchi Oikura (Marina Inoue))
+          </li>
+          <li key="2">
+            Remarks: This song is the opening theme music of "終物語
+            そだちロスト (Owarimonogatari Sodachi Lost)".
+          </li>
+        </ul>
+
+        <li key="5">キミガタメ (Kimigatame)</li>
+        <ul>
+          <li key="1">Vocal: Suara</li>
+          <li key="2">
+            Remarks: This song is the ending theme music of "うたわれるもの
+            (Utawarerumono)" at episode 26.
+          </li>
+        </ul>
       </ul>
 
       <h3>Links</h3>
@@ -58,17 +122,6 @@ export default function Home() {
         <li key="4">
           Hatena Blog2:{" "}
           <a href="https://kira924age.hatenadiary.com/">kira924age’s note</a>
-        </li>
-      </ul>
-
-      <h3>Programming Contest</h3>
-      <ul>
-        <li key="1">
-          AtCoder: <a href="https://atcoder.jp/users/kira924age">kira924age</a>
-        </li>
-        <li key="2">
-          Codeforces:{" "}
-          <a href="https://codeforces.com/profile/kira924age">kira924age</a>
         </li>
       </ul>
     </Layout>
