@@ -12,7 +12,7 @@ export default function FavoriteAnime() {
       Following list shows my favorite anime.
       <ul>
         <li key="1">空の境界 (Kara no Kyoukai)</li>
-        <li key="2">氷菓 (Hyouka)</li>
+        <li key="2">ローリング☆ガールズ (THE ROLLING GIRLS)</li>
         <li key="3">少女終末旅行 (Shoujo Shuumatsu Ryokou)</li>
         <li key="4">幸腹グラフィティ (Koufuku Graffiti)</li>
         <li key="5">魔法少女まどか☆マギカ (Mahou Shoujo Madoka Magica)</li>
@@ -79,6 +79,8 @@ export default function FavoriteAnime() {
         <li key="47">HUNTER×HUNTER</li>
         <li key="48">ばらかもん (Barakamon)</li>
         <li key="49">普通の女子校生が【ろこどる】やってみた。 (Futsuu no Joshikousei ga [Locodol] Yattemita.)</li>
+        <li key="50">ノーゲーム・ノーライフ (NO GAME NO LIFE)</li>
+        <li key="51">氷菓 (Hyouka)</li>
       </ul>
     </Layout>
   );
