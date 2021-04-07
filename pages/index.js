@@ -41,6 +41,7 @@ export default function Home() {
         <li key="2">ふたりエスケープ (Futari Escape)</li>
         <li key="3">NEW GAME!</li>
         <li key="4">はねバド！ (Hanebado!)</li>
+        <li key="5">DEATH NOTE</li>
       </ul>
 
       <h3>Favorite Novels</h3>
@@ -122,6 +123,9 @@ export default function Home() {
         <li key="4">
           Hatena Blog2:{" "}
           <a href="https://kira924age.hatenadiary.com/">kira924age’s note</a>
+        </li>
+        <li key="5">
+          annict: <a href="https://annict.com/@kira924age">@kira924age</a>
         </li>
       </ul>
     </Layout>
