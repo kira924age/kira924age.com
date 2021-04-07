@@ -11,8 +11,8 @@ export default function FavoriteAnime() {
       <h2>Favorite Anime</h2>
       Following list shows my favorite anime.
       <ul>
-        <li key="1">空の境界 (Kara no Kyoukai)</li>
-        <li key="2">ローリング☆ガールズ (THE ROLLING GIRLS)</li>
+        <li key="1">ローリング☆ガールズ (THE ROLLING GIRLS)</li>
+        <li key="2">空の境界 (Kara no Kyoukai)</li>
         <li key="3">少女終末旅行 (Shoujo Shuumatsu Ryokou)</li>
         <li key="4">幸腹グラフィティ (Koufuku Graffiti)</li>
         <li key="5">魔法少女まどか☆マギカ (Mahou Shoujo Madoka Magica)</li>
@@ -43,10 +43,7 @@ export default function FavoriteAnime() {
         </li>
         <li key="23">魔女の宅急便 (Majo no Takkyuubin)</li>
         <li key="24">もののけ姫 (Mononoke Hime)</li>
-        <li key="25">
-          キノの旅 -the Beautiful World- the Animated Series (Kino's Journey
-          -the Beautiful World- the Animated Series)
-        </li>
+        <li key="25">ノーゲーム・ノーライフ (NO GAME NO LIFE)</li>
         <li key="26">N・H・Kにようこそ！ (Welcome to the N.H.K.)</li>
         <li key="27">
           人類は衰退しました (Jinrui wa Suitai Shimashita Specials)
@@ -74,13 +71,11 @@ export default function FavoriteAnime() {
         <li key="42">Fate/stay night</li>
         <li key="43">BLACK LAGOON</li>
         <li key="44">ViVid Strike!</li>
-        <li key="45">ダンベル何キロ持てる？ (Dumbbell Nan Kilo Moteru?)</li>
+        <li key="45">氷菓 (Hyouka)</li>
         <li key="46">三ツ星カラーズ (Mitsuboshi Colors)</li>
         <li key="47">HUNTER×HUNTER</li>
         <li key="48">ばらかもん (Barakamon)</li>
         <li key="49">普通の女子校生が【ろこどる】やってみた。 (Futsuu no Joshikousei ga [Locodol] Yattemita.)</li>
-        <li key="50">ノーゲーム・ノーライフ (NO GAME NO LIFE)</li>
-        <li key="51">氷菓 (Hyouka)</li>
       </ul>
     </Layout>
   );
