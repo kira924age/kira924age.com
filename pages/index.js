@@ -117,15 +117,15 @@ export default function Home() {
           GitHub: <a href="https://github.com/kira924age">kira924age</a>
         </li>
         <li key="3">
+          Annict: <a href="https://annict.com/@kira924age">@kira924age</a>
+        </li>
+        <li key="4">
           Hatena Blog1:{" "}
           <a href="https://kira000.hatenadiary.jp/">kira924ageの雑記帳</a>
         </li>
-        <li key="4">
+        <li key="5">
           Hatena Blog2:{" "}
           <a href="https://kira924age.hatenadiary.com/">kira924age’s note</a>
-        </li>
-        <li key="5">
-          annict: <a href="https://annict.com/@kira924age">@kira924age</a>
         </li>
       </ul>
     </Layout>
