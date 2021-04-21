@@ -25,10 +25,10 @@ export default function Home() {
       <h3>Favorite Anime</h3>
       <ul>
         <li key="1">ローリング☆ガールズ (THE ROLLING GIRLS)</li>
-        <li key="2">空の境界 (Kara no Kyoukai)</li>
+        <li key="2">ゾンビランドサガ (Zombie Land Saga)</li>
         <li key="3">少女終末旅行 (Shoujo Shuumatsu Ryokou)</li>
-        <li key="4">幸腹グラフィティ (Koufuku Graffiti)</li>
-        <li key="5">魔法少女まどか☆マギカ (Mahou Shoujo Madoka Magica)</li>
+        <li key="4">Fate/Zero</li>
+        <li key="5">私に天使が舞い降りた! (Watashi ni Tenshi ga Maiorita!)</li>
 
         <Link href="/anime">
           <a>read more</a>
