@@ -19,7 +19,11 @@ export default function Home() {
       <h3>Profile</h3>
       <ul>
         <li key="1">Handle: kira924age</li>
-        <li key="2">Nationality: Japanese</li>
+        <li key="2">
+          Hobby: Anime (Watching), Manga (Reading), Cycling, Basketball
+          (Watching & Playing), Game (CTF, Competitive programming)
+        </li>
+        <li key="3">Nationality: Japanese</li>
       </ul>
 
       <h3>Favorite Anime</h3>
