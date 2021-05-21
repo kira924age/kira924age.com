@@ -32,16 +32,16 @@ export default function Layout({ children, home }) {
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff" />
 
-        <meta name="description" content="kira924age Official WebSite" />
+        <meta name="description" content="kira924age Official Website" />
 
         <meta property="og:title" content={siteTitle} />
         <meta property="og:site_name" content={siteTitle} />
-        <meta property="og:description" content="kira924age Official WebSite" />
+        <meta property="og:description" content="kira924age Official Website" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://kira924age.com"/>
         <meta property="og:image" content="https://kira924age.com/images/ogp.png"/>
 
-        <meta name="twitter:card" content="summary"/>
+        <meta name="twitter:card" content="summary_large_image"/>
         <meta name="twitter:site" content="@kira924age"/>
       </Head>
 
