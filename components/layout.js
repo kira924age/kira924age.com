@@ -34,7 +34,6 @@ export default function Layout({ children, home }) {
 
         <meta name="description" content="kira924age Official WebSite" />
 
-
         <meta property="og:title" content={siteTitle} />
         <meta property="og:site_name" content={siteTitle} />
         <meta property="og:description" content="kira924age Official WebSite" />
