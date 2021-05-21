@@ -32,15 +32,18 @@ export default function Layout({ children, home }) {
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff" />
 
-        <meta name="description" content="website of kira924age" />
-        <meta
-          property="og:image"
-          content={`https://og-image.now.sh/${encodeURI(
-            siteTitle
-          )}.png?theme=light&md=0&fontSize=75px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg`}
-        />
-        <meta name="og:title" content={siteTitle} />
-        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="description" content="kira924age Official WebSite" />
+
+
+        <meta property="og:title" content={siteTitle} />
+        <meta property="og:site_name" content={siteTitle} />
+        <meta property="og:description" content="kira924age Official WebSite" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://kira924age.com"/>
+        <meta property="og:image" content="https://kira924age.com/images/ogp.png"/>
+
+        <meta name="twitter:card" content="summary"/>
+        <meta name="twitter:site" content="@kira924age"/>
       </Head>
 
       {home && (
