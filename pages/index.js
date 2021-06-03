@@ -50,12 +50,17 @@ export default function Home() {
 
       <h3>Favorite Novels</h3>
       <ul>
-        <li key="1">神様のメモ帳 (Heaven's Memo Pad)</li>
+        <li key="1">Fate/Zero</li>
+        <ul>
+          <li key="1">Written by: 虚淵 玄 (Gen Urobuchi)</li>
+          <li key="2">Illustrated by: 武内 崇 (Takashi Takeuchi)</li>
+        </ul>
+        <li key="2">神様のメモ帳 (Heaven's Memo Pad)</li>
         <ul>
           <li key="1">Written by: 杉井光 (Hikaru Sugii)</li>
           <li key="2">Illustrated by: 岸田メル (Mel Kishida)</li>
         </ul>
-        <li key="2">さくら荘のペットな彼女 (The Pet Girl of Sakurasou)</li>
+        <li key="3">さくら荘のペットな彼女 (The Pet Girl of Sakurasou)</li>
         <ul>
           <li key="1">Written by: 鴨志田一 (Hajime Kamoshida)</li>
           <li key="2">Illustrated by: 溝口ケージ (Keiji Mizoguchi)</li>
