@@ -129,10 +129,13 @@ export default function Home() {
           Annict: <a href="https://annict.com/@kira924age">@kira924age</a>
         </li>
         <li key="4">
+          GAMEMO: <a href="https://gamemo.app/@kira924age">@kira924age</a>
+        </li>
+        <li key="5">
           Hatena Blog1:{" "}
           <a href="https://kira000.hatenadiary.jp/">kira924ageの雑記帳</a>
         </li>
-        <li key="5">
+        <li key="6">
           Hatena Blog2:{" "}
           <a href="https://kira924age.hatenadiary.com/">kira924age’s note</a>
         </li>
