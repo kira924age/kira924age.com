@@ -82,6 +82,7 @@ export default function FavoriteAnime() {
         </li>
         <li key="49">しゅごキャラ！ (Shugo Chara!)</li>
         <li key="50">ヨルムンガンド (Jormungand)</li>
+        <li key="51">スーパーカブ (Super Cub)</li>
       </ul>
     </Layout>
   );
