@@ -17,6 +17,7 @@ export default function FavoriteManga() {
         <li key="4">NEW GAME!</li>
         <li key="5">はねバド！ (Hanebado!)</li>
         <li key="6">DEATH NOTE</li>
+        <li key="7">げんしけん (Genshiken)</li>
       </ul>
     </Layout>
   );
