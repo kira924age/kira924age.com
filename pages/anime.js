@@ -12,7 +12,7 @@ export default function FavoriteAnime() {
       Following list shows my favorite anime.
       <ul>
         <li key="1">ローリング☆ガールズ (THE ROLLING GIRLS)</li>
-        <li key="2">ゾンビランドサガ</li>
+        <li key="2">SHIROBAKO</li>
         <li key="3">少女終末旅行 (Shoujo Shuumatsu Ryokou)</li>
         <li key="4">Fate/Zero</li>
         <li key="5">私に天使が舞い降りた! (Watashi ni Tenshi ga Maiorita!)</li>
@@ -21,7 +21,7 @@ export default function FavoriteAnime() {
         <li key="8">コードギアス (Code Geass)</li>
         <li key="9">Fate/stay night</li>
         <li key="10">幸腹グラフィティ (Koufuku Graffiti)</li>
-        <li key="11">SHIROBAKO</li>
+        <li key="11">ゾンビランドサガ</li>
         <li key="12">とある科学の超電磁砲 (Toaru Kagaku no Railgun)</li>
         <li key="13">ゆるキャン△ (Yuru Camp)</li>
         <li key="14">恋する小惑星 (Koisuru Asteroid)</li>
