@@ -144,6 +144,18 @@ export default function Home() {
           <a href="https://kira924age.hatenadiary.com/">kira924age’s note</a>
         </li>
       </ul>
+
+      <h3>Contact</h3>
+      <p>
+        Contact me at kira924age@gmail.com or{" "}
+        <a
+          href="https://twitter.com/kira924age"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Twitter
+        </a>
+      </p>
     </Layout>
   );
 }
