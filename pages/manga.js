@@ -19,7 +19,8 @@ export default function FavoriteManga() {
         <li key="6">推しの子 (Oshi no Ko)</li>
         <li key="7">DEATH NOTE</li>
         <li key="8">げんしけん (Genshiken)</li>
-        <li key="8">笑顔のたえない職場です。 (Egao no Taenai Shokuba desu.)</li>
+        <li key="9">笑顔のたえない職場です。 (Egao no Taenai Shokuba desu.)</li>
+        <li key="10">スクールゾーン (School Zone)</li>
       </ul>
     </Layout>
   );

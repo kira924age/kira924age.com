@@ -15,7 +15,7 @@ export default function FavoriteAnime() {
         <li key="2">SHIROBAKO</li>
         <li key="3">少女終末旅行 (Shoujo Shuumatsu Ryokou)</li>
         <li key="4">Fate/Zero</li>
-        <li key="5">私に天使が舞い降りた! (Watashi ni Tenshi ga Maiorita!)</li>
+        <li key="5">明日ちゃんのセーラ服 (Akebi-chan no Sailor-fuku)</li>
         <li key="6">空の境界 (Kara no Kyoukai)</li>
         <li key="7">魔法少女まどか☆マギカ (Mahou Shoujo Madoka Magica)</li>
         <li key="8">コードギアス (Code Geass)</li>
@@ -29,7 +29,7 @@ export default function FavoriteAnime() {
         <li key="16">銀の匙 Silver Spoon (Gin no Saji Silver Spoon)</li>
         <li key="17">氷菓 (Hyouka)</li>
         <li key="18">STEINS;GATE</li>
-        <li key="19">のんのんびより (Non Non Biyori)</li>
+        <li key="19">私に天使が舞い降りた! (Watashi ni Tenshi ga Maiorita!)</li>
         <li key="20">刀語 (Katanagatari)</li>
         <li key="21">物語シリーズ (Monogatari Series)</li>
         <li key="22">響け！ユーフォニアム (Sound! Euphonium)</li>
@@ -49,26 +49,25 @@ export default function FavoriteAnime() {
         <li key="27">魔女の宅急便 (Majo no Takkyuubin)</li>
         <li key="28">もののけ姫 (Mononoke Hime)</li>
         <li key="29">ノーゲーム・ノーライフ (NO GAME NO LIFE)</li>
-        <li key="30">N・H・Kにようこそ！ (Welcome to the N.H.K.)</li>
-        <li key="31">
+        <li key="30">のんのんびより (Non Non Biyori)</li>
+        <li key="31">N・H・Kにようこそ！ (Welcome to the N.H.K.)</li>
+        <li key="32">
           人類は衰退しました (Jinrui wa Suitai Shimashita Specials)
         </li>
-        <li key="32">
+        <li key="33">
           あの日見た花の名前を僕達はまだ知らない。 (Ano Hi Mita Hana no Namae wo
           Bokutachi wa Mada Shiranai.)
         </li>
-        <li key="33">聲の形 (Koe no Katachi)</li>
-        <li key="34">ガールズ&パンツァー (Girls & Panzer)</li>
-        <li key="35">はねバド！ (Hanebado!)</li>
-        <li key="36">ハクメイとミコチ (Hakumei to Mikochi)</li>
-        <li key="37">東京マグニチュード8.0 (Tokyo Magnitude 8.0)</li>
+        <li key="34">聲の形 (Koe no Katachi)</li>
+        <li key="35">ガールズ&パンツァー (Girls & Panzer)</li>
+        <li key="36">はねバド！ (Hanebado!)</li>
+        <li key="37">ハクメイとミコチ (Hakumei to Mikochi)</li>
         <li key="38">NEW GAME!</li>
         <li key="39">ARIA</li>
         <li key="40">
           秒速5センチメートル (5 Centimeters per Second a chain of short stories
           about their distance)
         </li>
-
         <li key="41">有頂天家族 (Uchouten Kazoku)</li>
         <li key="42">この世界の片隅に</li>
         <li key="43">BLACK LAGOON</li>
@@ -80,9 +79,10 @@ export default function FavoriteAnime() {
           普通の女子校生が【ろこどる】やってみた。 (Futsuu no Joshikousei ga
           [Locodol] Yattemita.)
         </li>
-        <li key="49">しゅごキャラ！ (Shugo Chara!)</li>
+        <li key="49">東京マグニチュード8.0 (Tokyo Magnitude 8.0)</li>
         <li key="50">ヨルムンガンド (Jormungand)</li>
         <li key="51">スーパーカブ (Super Cub)</li>
+        <li key="52">しゅごキャラ！ (Shugo Chara!)</li>
       </ul>
     </Layout>
   );
