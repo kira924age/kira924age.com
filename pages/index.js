@@ -29,10 +29,10 @@ export default function Home() {
       <h3>Favorite Anime</h3>
       <ul>
         <li key="1">ローリング☆ガールズ (THE ROLLING GIRLS)</li>
-        <li key="2">SHIROBAKO</li>
-        <li key="3">少女終末旅行 (Shoujo Shuumatsu Ryokou)</li>
-        <li key="4">Fate/Zero</li>
-        <li key="5">明日ちゃんのセーラ服 (Akebi-chan no Sailor-fuku)</li>
+        <li key="2">明日ちゃんのセーラー服 (Akebi-chan no Sailor-fuku)</li>
+        <li key="3">SHIROBAKO</li>
+        <li key="4">少女終末旅行 (Shoujo Shuumatsu Ryokou)</li>
+        <li key="5">Fate/Zero</li>
 
         <Link href="/anime">
           <a>read more</a>
