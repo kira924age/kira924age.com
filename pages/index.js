@@ -54,10 +54,11 @@ export default function Home() {
 
       <h3>Favorite Novels</h3>
       <ul>
-        <li key="1">Fate/Zero</li>
-        <li key="2">神様のメモ帳 (Heaven's Memo Pad)</li>
-        <li key="3">さくら荘のペットな彼女 (The Pet Girl of Sakurasou)</li>
-        <li key="4">裏世界ピクニック (Urasekai Picnic)</li>
+        <li key="1">空の境界 (Kara no Kyoukai)</li>
+        <li key="2">Fate/Zero</li>
+        <li key="3">神様のメモ帳 (Heaven's Memo Pad)</li>
+        <li key="4">さくら荘のペットな彼女 (The Pet Girl of Sakurasou)</li>
+        <li key="5">裏世界ピクニック (Urasekai Picnic)</li>
       </ul>
 
       <h3>Favorite Songs</h3>
@@ -67,6 +68,10 @@ export default function Home() {
         <li key="3">傷跡 (Kizuato)</li>
         <li key="4">夕立方程式 (Yuudachi Houteishiki)</li>
         <li key="5">キミガタメ (Kimigatame)</li>
+
+        <Link href="/song">
+          <a>read more</a>
+        </Link>
       </ul>
 
       <h3>Links</h3>
