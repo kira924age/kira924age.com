@@ -21,6 +21,7 @@ export default function FavoriteManga() {
         <li key="8">げんしけん (Genshiken)</li>
         <li key="9">笑顔のたえない職場です。 (Egao no Taenai Shokuba desu.)</li>
         <li key="10">スクールゾーン (School Zone)</li>
+        <li key="11">欠けた月とドーナッツ (Kaketa Tsuki to Doughnut)</li>
       </ul>
     </Layout>
   );
