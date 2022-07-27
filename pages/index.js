@@ -41,11 +41,11 @@ export default function Home() {
 
       <h3>Favorite Manga</h3>
       <ul>
-        <li key="1">とある科学の超電磁砲 (Toaru Kagaku no Railgun)</li>
-        <li key="2">ふたりエスケープ (Futari Escape)</li>
+        <li key="1">NEW GAME!</li>
+        <li key="2">とある科学の超電磁砲 (Toaru Kagaku no Railgun)</li>
         <li key="3">お兄ちゃんはおしまい！ (Oniichan wa Oshimai!)</li>
-        <li key="4">NEW GAME!</li>
-        <li key="5">はねバド！ (Hanebado!)</li>
+        <li key="4">はねバド！ (Hanebado!)</li>
+        <li key="5">推しの子 (Oshi no Ko)</li>
 
         <Link href="/manga">
           <a>read more</a>
