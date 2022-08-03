@@ -23,8 +23,8 @@ export default function FavoriteAnime() {
         <li key="10">幸腹グラフィティ (Koufuku Graffiti)</li>
         <li key="11">ゾンビランドサガ</li>
         <li key="12">とある科学の超電磁砲 (Toaru Kagaku no Railgun)</li>
-        <li key="13">ゆるキャン△ (Yuru Camp)</li>
-        <li key="14">恋する小惑星 (Koisuru Asteroid)</li>
+        <li key="13">メイドインアビス (Made in Abyss)</li>
+        <li key="14">ゆるキャン△ (Yuru Camp)</li>
         <li key="15">うたわれるもの (Utawarerumono)</li>
         <li key="16">銀の匙 Silver Spoon (Gin no Saji Silver Spoon)</li>
         <li key="17">氷菓 (Hyouka)</li>
@@ -82,7 +82,8 @@ export default function FavoriteAnime() {
         <li key="49">東京マグニチュード8.0 (Tokyo Magnitude 8.0)</li>
         <li key="50">ヨルムンガンド (Jormungand)</li>
         <li key="51">スーパーカブ (Super Cub)</li>
-        <li key="52">しゅごキャラ！ (Shugo Chara!)</li>
+        <li key="52">恋する小惑星 (Koisuru Asteroid)</li>
+        <li key="53">しゅごキャラ！ (Shugo Chara!)</li>
       </ul>
     </Layout>
   );

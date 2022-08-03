@@ -43,9 +43,9 @@ export default function Home() {
       <ul>
         <li key="1">NEW GAME!</li>
         <li key="2">とある科学の超電磁砲 (Toaru Kagaku no Railgun)</li>
-        <li key="3">お兄ちゃんはおしまい！ (Oniichan wa Oshimai!)</li>
-        <li key="4">はねバド！ (Hanebado!)</li>
-        <li key="5">推しの子 (Oshi no Ko)</li>
+        <li key="3">メイドインアビス (Made in Abyss)</li>
+        <li key="4">お兄ちゃんはおしまい！ (Oniichan wa Oshimai!)</li>
+        <li key="5">はねバド！ (Hanebado!)</li>
 
         <Link href="/manga">
           <a>read more</a>
