@@ -16,7 +16,7 @@ export default function FavoriteSong() {
         <li key="3">傷跡 (Kizuato)</li>
         <li key="4">夕立方程式 (Yuudachi Houteishiki)</li>
         <li key="5">キミガタメ (Kimigatame)</li>
-        <li key="6">アオクユレテイル (Aokuyureteiru)</li>
+        <li key="6">アオくユレている (Aokuyureteiru)</li>
         <li key="7">情熱の薔薇 (Jounetsu no Bara)</li>
         <li key="8">1000のバイオリン (Sen no Violin)</li>
         <li key="9">月の爆撃機 (Tsuki no Bakugekiki)</li>
