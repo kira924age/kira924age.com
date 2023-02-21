@@ -23,9 +23,9 @@ export default function FavoriteAnime() {
         <li key="10">幸腹グラフィティ (Koufuku Graffiti)</li>
         <li key="11">ゾンビランドサガ</li>
         <li key="12">とある科学の超電磁砲 (Toaru Kagaku no Railgun)</li>
-        <li key="13">メイドインアビス (Made in Abyss)</li>
-        <li key="14">ゆるキャン△ (Yuru Camp)</li>
-        <li key="15">うたわれるもの (Utawarerumono)</li>
+        <li key="13">鋼の錬金術師 FULLMETAL ALCHEMIST</li>
+        <li key="14">メイドインアビス (Made in Abyss)</li>
+        <li key="15">ゆるキャン△ (Yuru Camp)</li>
         <li key="16">銀の匙 Silver Spoon (Gin no Saji Silver Spoon)</li>
         <li key="17">氷菓 (Hyouka)</li>
         <li key="18">STEINS;GATE</li>
@@ -34,36 +34,36 @@ export default function FavoriteAnime() {
         <li key="21">物語シリーズ (Monogatari Series)</li>
         <li key="22">響け！ユーフォニアム (Sound! Euphonium)</li>
         <li key="23">さくら荘のペットな彼女 (The Pet Girl of Sakurasou)</li>
-        <li key="24">
+        <li key="24">うたわれるもの (Utawarerumono)</li>
+        <li key="25">
           ドラえもん のび太と雲の王国 (Doraemon Movie 13: Nobita to Kumo no
           Oukoku)
         </li>
-        <li key="25">
+        <li key="26">
           クレヨンしんちゃん 嵐を呼ぶ モーレツ!オトナ帝国の逆襲 (Eiga Crayon
           Shin-chan: Arashi wo Yobu Mouretsu! Otona Teikoku Gyakushuu)
         </li>
-        <li key="26">
+        <li key="27">
           クレヨンしんちゃん 電撃!ブタのヒヅメ大作戦 (Eiga Crayon Shin-chan:
           Dengeki! Buta no Hizume Daisakusen)
         </li>
-        <li key="27">魔女の宅急便 (Majo no Takkyuubin)</li>
         <li key="28">もののけ姫 (Mononoke Hime)</li>
-        <li key="29">ノーゲーム・ノーライフ (NO GAME NO LIFE)</li>
-        <li key="30">のんのんびより (Non Non Biyori)</li>
-        <li key="31">N・H・Kにようこそ！ (Welcome to the N.H.K.)</li>
-        <li key="32">
-          人類は衰退しました (Jinrui wa Suitai Shimashita Specials)
-        </li>
+        <li key="29">魔女の宅急便 (Majo no Takkyuubin)</li>
+        <li key="30">ノーゲーム・ノーライフ (NO GAME NO LIFE)</li>
+        <li key="31">のんのんびより (Non Non Biyori)</li>
+        <li key="32">N・H・Kにようこそ！ (Welcome to the N.H.K.)</li>
         <li key="33">
-          あの日見た花の名前を僕達はまだ知らない。 (Ano Hi Mita Hana no Namae wo
-          Bokutachi wa Mada Shiranai.)
+          人類は衰退しました (Jinrui wa Suitai Shimashita Specials)
         </li>
         <li key="34">聲の形 (Koe no Katachi)</li>
         <li key="35">ガールズ&パンツァー (Girls & Panzer)</li>
         <li key="36">はねバド！ (Hanebado!)</li>
-        <li key="37">ハクメイとミコチ (Hakumei to Mikochi)</li>
-        <li key="38">NEW GAME!</li>
-        <li key="39">ARIA</li>
+        <li key="37">
+          あの日見た花の名前を僕達はまだ知らない。 (Ano Hi Mita Hana no Namae wo
+          Bokutachi wa Mada Shiranai.)
+        </li>
+        <li key="38">ハクメイとミコチ (Hakumei to Mikochi)</li>
+        <li key="39">NEW GAME!</li>
         <li key="40">
           秒速5センチメートル (5 Centimeters per Second a chain of short stories
           about their distance)
@@ -72,18 +72,19 @@ export default function FavoriteAnime() {
         <li key="42">この世界の片隅に</li>
         <li key="43">BLACK LAGOON</li>
         <li key="44">ViVid Strike!</li>
-        <li key="45">三ツ星カラーズ (Mitsuboshi Colors)</li>
-        <li key="46">HUNTER×HUNTER</li>
-        <li key="47">ばらかもん (Barakamon)</li>
-        <li key="48">
+        <li key="45">ARIA</li>
+        <li key="46">三ツ星カラーズ (Mitsuboshi Colors)</li>
+        <li key="47">HUNTER×HUNTER</li>
+        <li key="48">ばらかもん (Barakamon)</li>
+        <li key="49">
           普通の女子校生が【ろこどる】やってみた。 (Futsuu no Joshikousei ga
           [Locodol] Yattemita.)
         </li>
-        <li key="49">東京マグニチュード8.0 (Tokyo Magnitude 8.0)</li>
         <li key="50">ヨルムンガンド (Jormungand)</li>
         <li key="51">スーパーカブ (Super Cub)</li>
-        <li key="52">恋する小惑星 (Koisuru Asteroid)</li>
-        <li key="53">しゅごキャラ！ (Shugo Chara!)</li>
+        <li key="52">東京マグニチュード8.0 (Tokyo Magnitude 8.0)</li>
+        <li key="53">恋する小惑星 (Koisuru Asteroid)</li>
+        <li key="54">しゅごキャラ！ (Shugo Chara!)</li>
       </ul>
     </Layout>
   );
