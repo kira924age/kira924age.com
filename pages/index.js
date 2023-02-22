@@ -11,8 +11,7 @@ export default function Home() {
       </Head>
       <section className={utilStyles.headingMd}>
         <p>
-          Hi. I'm an anime otaku. I'm a student at The University of
-          Electro-Communications.
+          Hi. Welcome to my web site.
         </p>
       </section>
 
