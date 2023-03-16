@@ -21,6 +21,7 @@ export default function FavoriteSong() {
         <li key="8">1000のバイオリン (Sen no Violin)</li>
         <li key="9">月の爆撃機 (Tsuki no Bakugekiki)</li>
         <li key="10">終わらない歌 (Owaranai Uta)</li>
+        <li key="11">白金ディスコ (Platinum Disco)</li>
       </ul>
     </Layout>
   );
