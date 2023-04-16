@@ -1,6 +1,18 @@
-# kira924age.com
+# README
 
-This is my website.
+## npm scripts
 
-* URL: https://kira924age.com
+- run develop server
+
+```
+$ npm run dev
+```
+
+## deploy
+
+```
+$ git pull
+$ sudo docker build -t kira924age/kira924age.com:latest .
+$ sudo docker-compose up -d
+```
 

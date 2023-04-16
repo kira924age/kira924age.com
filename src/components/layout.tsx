@@ -2,11 +2,18 @@ import Head from "next/head";
 import styles from "./layout.module.css";
 import utilStyles from "../styles/utils.module.css";
 import Link from "next/link";
+import Image from "next/image";
 
 const name = "kira924age";
-export const siteTitle = "kira924age.com";
+const siteTitle = "kira924age.com";
 
-export default function Layout({ children, home }) {
+export default function Layout({
+  children,
+  home,
+}: {
+  children: React.ReactNode;
+  home?: boolean;
+}) {
   return (
     <div className={styles.container}>
       <Head>
@@ -38,32 +45,20 @@ export default function Layout({ children, home }) {
         <meta property="og:site_name" content={siteTitle} />
         <meta property="og:description" content="kira924age Official Website" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://kira924age.com"/>
-        <meta property="og:image" content="https://kira924age.com/images/ogp.png"/>
+        <meta property="og:url" content="https://kira924age.com" />
+        <meta
+          property="og:image"
+          content="https://kira924age.com/images/ogp.png"
+        />
 
-        <meta name="twitter:card" content="summary_large_image"/>
-        <meta name="twitter:site" content="@kira924age"/>
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@kira924age" />
       </Head>
-
-      {home && (
-        <header className={styles.header}>
-          <>
-            <img
-              src="/images/profile.png"
-              className={`${styles.headerHomeImage} ${utilStyles.borderCircle}`}
-              alt={name}
-            />
-            <h1 className={utilStyles.headingXl}>{name}</h1>
-          </>
-        </header>
-      )}
 
       <main>{children}</main>
       {!home && (
         <div className={styles.backToHome}>
-          <Link href="/">
-            <a>← Back to home</a>
-          </Link>
+          <Link href="/">← Back to home</Link>
         </div>
       )}
     </div>

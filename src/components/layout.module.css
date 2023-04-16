@@ -1,3 +1,7 @@
+.iconImage {
+  border-radius: 9999px;
+}
+
 .container {
   max-width: 42rem;
   padding: 0 1rem;
