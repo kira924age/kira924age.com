@@ -12,7 +12,6 @@ $ npm run dev
 
 ```
 $ git pull
-$ sudo docker build -t kira924age/kira924age.com:latest .
-$ sudo docker-compose up -d
+$ sudo ./scripts/deploy.sh
 ```
 
