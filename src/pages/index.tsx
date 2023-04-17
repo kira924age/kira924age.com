@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image, { StaticImageData } from "next/image";
 import { MdOutbound } from "react-icons/md";
 
-import Layout from "../components/layout";
+import { Layout } from "../components/layout";
 import styles from "../styles/Home.module.scss";
 import utilStyles from "../styles/utils.module.css";
 import twitter from "../../assets/images/twitter.png";

@@ -1,29 +1,33 @@
 import Head from "next/head";
 import Link from "next/link";
-import Layout from "../components/layout";
+import { Layout } from "../components/layout";
 
-export default function FavoriteManga() {
+const Manga: React.FC = () => {
   return (
     <Layout>
       <Head>
         <title>Favorite Manga</title>
       </Head>
-      <h2>Favorite Manga</h2>
+      <h2>Manga</h2>
+      <p>漫画のことを書くページです。</p>
+      <h3>Favorite Manga</h3>
       Following list shows my favorite manga.
       <ul>
-        <li key="1">NEW GAME!</li>
-        <li key="2">とある科学の超電磁砲 (Toaru Kagaku no Railgun)</li>
-        <li key="3">メイドインアビス (Made in Abyss)</li>
-        <li key="4">お兄ちゃんはおしまい！ (Oniichan wa Oshimai!)</li>
-        <li key="5">はねバド！ (Hanebado!)</li>
-        <li key="6">推しの子 (Oshi no Ko)</li>
-        <li key="7">DEATH NOTE</li>
-        <li key="8">げんしけん (Genshiken)</li>
-        <li key="9">笑顔のたえない職場です。 (Egao no Taenai Shokuba desu.)</li>
-        <li key="10">スクールゾーン (School Zone)</li>
-        <li key="11">欠けた月とドーナッツ (Kaketa Tsuki to Doughnut)</li>
-        <li key="12">ふたりエスケープ (Futari Escape)</li>
+        <li>NEW GAME!</li>
+        <li>とある科学の超電磁砲 (Toaru Kagaku no Railgun)</li>
+        <li>メイドインアビス (Made in Abyss)</li>
+        <li>お兄ちゃんはおしまい！ (Oniichan wa Oshimai!)</li>
+        <li>はねバド！ (Hanebado!)</li>
+        <li>推しの子 (Oshi no Ko)</li>
+        <li>DEATH NOTE</li>
+        <li>げんしけん (Genshiken)</li>
+        <li>笑顔のたえない職場です。 (Egao no Taenai Shokuba desu.)</li>
+        <li>スクールゾーン (School Zone)</li>
+        <li>欠けた月とドーナッツ (Kaketa Tsuki to Doughnut)</li>
+        <li>少女終末旅行</li>
       </ul>
     </Layout>
   );
-}
+};
+
+export default Manga;

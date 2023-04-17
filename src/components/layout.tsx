@@ -1,19 +1,13 @@
 import Head from "next/head";
 import styles from "./layout.module.css";
-import utilStyles from "../styles/utils.module.css";
 import Link from "next/link";
-import Image from "next/image";
 
-const name = "kira924age";
-const siteTitle = "kira924age.com";
-
-export default function Layout({
-  children,
-  home,
-}: {
+type Props = {
   children: React.ReactNode;
   home?: boolean;
-}) {
+};
+
+export const Layout: React.FC<Props> = ({ children, home }) => {
   return (
     <div className={styles.container}>
       <Head>
@@ -41,8 +35,8 @@ export default function Layout({
 
         <meta name="description" content="kira924age Official Website" />
 
-        <meta property="og:title" content={siteTitle} />
-        <meta property="og:site_name" content={siteTitle} />
+        <meta property="og:title" content="kira924age.com" />
+        <meta property="og:site_name" content="kira924age.com" />
         <meta property="og:description" content="kira924age Official Website" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://kira924age.com" />
@@ -63,4 +57,4 @@ export default function Layout({
       )}
     </div>
   );
-}
+};
