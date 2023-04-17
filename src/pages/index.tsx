@@ -179,12 +179,6 @@ const Home: React.FC = () => {
           href="https://kira000.hatenadiary.jp/"
           src={hatenablog}
         />
-        <AccountItem
-          name="Hatena Blog2"
-          alt="kira924age’s note"
-          href="https://kira924age.hatenadiary.com/"
-          src={hatenablog}
-        />
       </div>
 
       <h3>Contact</h3>
