@@ -1,4 +1,4 @@
-.iconImage {
+.iconImage img {
   border-radius: 100%;
   margin-bottom: 1rem;
 }
@@ -34,5 +34,9 @@
     height: 60px;
     background: "transparent";
     margin-bottom:0.2rem;
+
+    img {
+      border-radius: 10%;
+    }
   }
 }

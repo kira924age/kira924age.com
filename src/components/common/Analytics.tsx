@@ -6,7 +6,7 @@ export const Analytics: React.FC = () => {
   return (
     <>
       <Script
-        src="https://www.googletagmanager.com/gtag/js?id=${ANALYTICS_ID}"
+        src={`https://www.googletagmanager.com/gtag/js?id=${ANALYTICS_ID}`}
         strategy="afterInteractive"
       />
       <Script id="google-analytics" strategy="afterInteractive">

@@ -26,16 +26,53 @@ const AccountItem: React.FC<AccountItemProps> = ({ name, href, alt, src }) => {
   return (
     <div className={styles.accountItem}>
       <a href={href} target="_blank" rel="noopener noreferrer">
-        <Image
-          src={src}
-          alt={alt}
-          width={60}
-          height={60}
-          style={{ borderRadius: "10%" }}
-        />
+        <Image src={src} alt={alt} width={60} height={60} />
       </a>
       <span>{name}</span>
     </div>
+  );
+};
+
+type ProductItemProps = {
+  name: string;
+  productUrl: string;
+  githubUrl: string;
+  articleUrl: string;
+  articleTitle: string;
+};
+
+const ProductItem: React.FC<ProductItemProps> = ({
+  name,
+  productUrl,
+  githubUrl,
+  articleUrl,
+  articleTitle,
+}) => {
+  return (
+    <>
+      <li>{name}</li>
+      <li>
+        URL:{" "}
+        <a href={productUrl} target="_blank" rel="noopenner noreferrer">
+          {productUrl}
+          <MdOutbound size="1rem" />
+        </a>
+      </li>
+      <li>
+        GitHub:{" "}
+        <a href={githubUrl} target="_blank" rel="noopenner noreferrer">
+          {githubUrl}
+          <MdOutbound size="1rem" />
+        </a>
+      </li>
+      <li>
+        Article (Japanese):{" "}
+        <a href={articleUrl} target="_blank" rel="noopenner noreferrer">
+          {articleTitle}
+          <MdOutbound size="1rem" />
+        </a>
+      </li>
+    </>
   );
 };
 
@@ -47,13 +84,14 @@ const Home: React.FC = () => {
       </Head>
 
       <header className={styles.header}>
-        <Image
-          src="/images/profile.png"
-          width={100}
-          height={100}
-          alt="kira924age"
-          className={styles.iconImage}
-        />
+        <div className={styles.iconImage}>
+          <Image
+            src="/images/profile.png"
+            width={100}
+            height={100}
+            alt="kira924age"
+          />
+        </div>
         <div className={utilStyles.headingXl}>kira924age</div>
         <p>anime otaku</p>
       </header>
@@ -74,42 +112,15 @@ const Home: React.FC = () => {
 
       <h3>Products</h3>
       <ul>
-        <li key="1">Codeforces Problems</li>
+        <li>Codeforces Problems</li>
         <ul>
-          <li key="1">
-            URL:{" "}
-            <a
-              href="https://cf.kira924age.com/#/table/"
-              target="_blank"
-              rel="noopenner noreferrer"
-            >
-              https://cf.kira924age.com/#/table/
-              <MdOutbound size="1rem" />
-            </a>
-          </li>
-          <li key="2">
-            GitHub:{" "}
-            <a
-              href="https://github.com/kira924age/CodeforcesProblems"
-              target="_blank"
-              rel="noopenner noreferrer"
-            >
-              kira924age/CodeforcesProblems
-              <MdOutbound size="1rem" />
-            </a>
-          </li>
-          <li key="3">
-            Article (Japanese):{" "}
-            <a
-              href="https://kira000.hatenadiary.jp/entry/2021/03/06/123556"
-              target="_blank"
-              rel="noopenner noreferrer"
-            >
-              AtCoder Problems のパクリアプリ CF Problems を作りました -
-              kira924ageの雑記帳
-              <MdOutbound size="1rem" />
-            </a>
-          </li>
+          <ProductItem
+            name="Codeforces Problems"
+            productUrl="https://cf.kira924age.com/#/table/"
+            githubUrl="https://github.com/kira924age/CodeforcesProblems"
+            articleUrl="https://kira000.hatenadiary.jp/entry/2021/03/06/123556"
+            articleTitle="AtCoder Problems のパクリアプリ CF Problems を作りました - kira924ageの雑記帳"
+          />
         </ul>
       </ul>
 
