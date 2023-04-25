@@ -1,19 +1,20 @@
 import Head from "next/head";
-import Link from "next/link";
 import Image, { StaticImageData } from "next/image";
+import Link from "next/link";
 import { MdOutbound } from "react-icons/md";
+
+import gamemo from "../../assets/images/GAMEMO.png";
+import annict from "../../assets/images/annict.png";
+import atcoder from "../../assets/images/atcoder.png";
+import bookmeter from "../../assets/images/bookmeter.png";
+import codeforces from "../../assets/images/codeforces.png";
+import github from "../../assets/images/github.svg";
+import hatenablog from "../../assets/images/hatenablog.png";
+import twitter from "../../assets/images/twitter.png";
 
 import { Layout } from "../components/layout";
 import styles from "../styles/Home.module.scss";
 import utilStyles from "../styles/utils.module.css";
-import twitter from "../../assets/images/twitter.png";
-import github from "../../assets/images/github.svg";
-import atcoder from "../../assets/images/atcoder.png";
-import codeforces from "../../assets/images/codeforces.png";
-import annict from "../../assets/images/annict.png";
-import bookmeter from "../../assets/images/bookmeter.png";
-import gamemo from "../../assets/images/GAMEMO.png";
-import hatenablog from "../../assets/images/hatenablog.png";
 
 type AccountItemProps = {
   name: string;
