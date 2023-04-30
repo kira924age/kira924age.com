@@ -1,8 +1,9 @@
-import Head from "next/head";
-import React from "react";
-import { Layout } from "../components/layout";
+import Head from 'next/head'
+import React from 'react'
+import { Layout } from '../components/layout'
 
 const Manga: React.FC = () => {
+  console.log('hoge')
   return (
     <Layout>
       <Head>
@@ -27,7 +28,7 @@ const Manga: React.FC = () => {
         <li>少女終末旅行</li>
       </ul>
     </Layout>
-  );
-};
+  )
+}
 
-export default Manga;
+export default Manga
