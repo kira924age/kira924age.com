@@ -1,7 +1,7 @@
-import Script from "next/script";
-import React from "react";
+import Script from 'next/script';
+import React from 'react';
 
-const ANALYTICS_ID = "G-3BJR3TX6CR";
+const ANALYTICS_ID = 'G-3BJR3TX6CR';
 
 export const Analytics: React.FC = () => {
   return (

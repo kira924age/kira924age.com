@@ -1,6 +1,6 @@
-import Head from "next/head";
-import React from "react";
-import { Layout } from "../components/layout";
+import Head from 'next/head';
+import React from 'react';
+import { Layout } from '../components/layout';
 
 const Song: React.FC = () => {
   return (
