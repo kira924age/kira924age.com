@@ -1,5 +1,5 @@
-import Head from "next/head";
-import { Layout } from "../components/layout";
+import Head from 'next/head'
+import { Layout } from '../components/layout'
 
 const Anime: React.FC = () => {
   return (
@@ -8,7 +8,7 @@ const Anime: React.FC = () => {
         <title>Anime</title>
       </Head>
       <h2>Anime</h2>
-      <p>アニメに関連することはこのページに書く予定です。</p>
+      <p>アニメに関連することはこのページに書く予定です</p>
       <h3>Favorite Anime</h3>
       Following list shows my favorite anime.
       <ul>
@@ -86,7 +86,7 @@ const Anime: React.FC = () => {
         <li>しゅごキャラ！ (Shugo Chara!)</li>
       </ul>
     </Layout>
-  );
-};
+  )
+}
 
-export default Anime;
+export default Anime
