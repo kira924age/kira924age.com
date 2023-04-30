@@ -1,6 +1,10 @@
-console.log("Try npm run lint/fix!!!!")
+console.log('Try npm run lint/fix!!!!')
 
-export function doSomeStuff(withThis: string, andThat: string, andThose: string[]) {
+export function doSomeStuff(
+  withThis: string,
+  andThat: string,
+  andThose: string[]
+) {
   // function on one line
   if (andThose.length === 0) {
     return false
