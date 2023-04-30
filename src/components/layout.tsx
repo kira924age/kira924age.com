@@ -3,12 +3,12 @@ import Link from "next/link";
 import React from "react";
 import styles from "./layout.module.css";
 
-type Props = {
+type Properties = {
   children: React.ReactNode;
   home?: boolean;
 };
 
-export const Layout: React.FC<Props> = ({ children, home }) => {
+export const Layout: React.FC<Properties> = ({ children, home }) => {
   return (
     <div className={styles.container}>
       <Head>

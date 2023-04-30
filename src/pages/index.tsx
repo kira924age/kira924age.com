@@ -15,14 +15,14 @@ import { Layout } from "../components/layout";
 import styles from "../styles/Home.module.scss";
 import utilStyles from "../styles/utils.module.css";
 
-type AccountItemProps = {
+type AccountItemProperties = {
   name: string;
   href: string;
   alt: string;
   src: StaticImageData;
 };
 
-const AccountItem: React.FC<AccountItemProps> = ({ name, href, alt, src }) => {
+const AccountItem: React.FC<AccountItemProperties> = ({ name, href, alt, src }) => {
   return (
     <div className={styles.accountItem}>
       <a href={href} target="_blank" rel="noopener noreferrer">
@@ -33,7 +33,7 @@ const AccountItem: React.FC<AccountItemProps> = ({ name, href, alt, src }) => {
   );
 };
 
-type ProductItemProps = {
+type ProductItemProperties = {
   name: string;
   productUrl: string;
   githubUrl: string;
@@ -41,7 +41,7 @@ type ProductItemProps = {
   articleTitle: string;
 };
 
-const ProductItem: React.FC<ProductItemProps> = ({
+const ProductItem: React.FC<ProductItemProperties> = ({
   name,
   productUrl,
   githubUrl,
