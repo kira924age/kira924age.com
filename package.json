@@ -12,8 +12,7 @@
   },
   "lint-staged": {
     "*.{ts,vue}": "eslint",
-    "*.{css,scss,vue}": "stylelint",
-    "*": "prettier -w -u"
+    "*.{css,scss,vue}": "stylelint"
   },
   "prettier": {
     "singleQuote": true,
