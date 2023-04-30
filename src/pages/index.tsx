@@ -1,28 +1,33 @@
-import Head from 'next/head';
-import Image, { StaticImageData } from 'next/image';
-import Link from 'next/link';
-import React from 'react';
-import { MdOutbound } from 'react-icons/md';
-import gamemo from '../../assets/images/GAMEMO.png';
-import annict from '../../assets/images/annict.png';
-import atcoder from '../../assets/images/atcoder.png';
-import bookmeter from '../../assets/images/bookmeter.png';
-import codeforces from '../../assets/images/codeforces.png';
-import github from '../../assets/images/github.svg';
-import hatenablog from '../../assets/images/hatenablog.png';
-import twitter from '../../assets/images/twitter.png';
-import { Layout } from '../components/layout';
-import styles from '../styles/Home.module.scss';
-import utilStyles from '../styles/utils.module.css';
+import Head from 'next/head'
+import Image, { StaticImageData } from 'next/image'
+import Link from 'next/link'
+import React from 'react'
+import { MdOutbound } from 'react-icons/md'
+import gamemo from '../../assets/images/GAMEMO.png'
+import annict from '../../assets/images/annict.png'
+import atcoder from '../../assets/images/atcoder.png'
+import bookmeter from '../../assets/images/bookmeter.png'
+import codeforces from '../../assets/images/codeforces.png'
+import github from '../../assets/images/github.svg'
+import hatenablog from '../../assets/images/hatenablog.png'
+import twitter from '../../assets/images/twitter.png'
+import { Layout } from '../components/layout'
+import styles from '../styles/Home.module.scss'
+import utilStyles from '../styles/utils.module.scss'
 
 type AccountItemProperties = {
-  name: string;
-  href: string;
-  alt: string;
-  src: StaticImageData;
-};
+  name: string
+  href: string
+  alt: string
+  src: StaticImageData
+}
 
-const AccountItem: React.FC<AccountItemProperties> = ({ name, href, alt, src }) => {
+const AccountItem: React.FC<AccountItemProperties> = ({
+  name,
+  href,
+  alt,
+  src,
+}) => {
   return (
     <div className={styles.accountItem}>
       <a href={href} target="_blank" rel="noopener noreferrer">
@@ -30,16 +35,16 @@ const AccountItem: React.FC<AccountItemProperties> = ({ name, href, alt, src }) 
       </a>
       <span>{name}</span>
     </div>
-  );
-};
+  )
+}
 
 type ProductItemProperties = {
-  name: string;
-  productUrl: string;
-  githubUrl: string;
-  articleUrl: string;
-  articleTitle: string;
-};
+  name: string
+  productUrl: string
+  githubUrl: string
+  articleUrl: string
+  articleTitle: string
+}
 
 const ProductItem: React.FC<ProductItemProperties> = ({
   name,
@@ -73,8 +78,8 @@ const ProductItem: React.FC<ProductItemProperties> = ({
         </a>
       </li>
     </>
-  );
-};
+  )
+}
 
 const Home: React.FC = () => {
   return (
@@ -205,7 +210,7 @@ const Home: React.FC = () => {
         (recommend)
       </p>
     </Layout>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home

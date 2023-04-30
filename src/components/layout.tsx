@@ -1,12 +1,12 @@
-import Head from 'next/head';
-import Link from 'next/link';
-import React from 'react';
-import styles from './layout.module.css';
+import Head from 'next/head'
+import Link from 'next/link'
+import React from 'react'
+import styles from './layout.module.scss'
 
 type Properties = {
-  children: React.ReactNode;
-  home?: boolean;
-};
+  children: React.ReactNode
+  home?: boolean
+}
 
 export const Layout: React.FC<Properties> = ({ children, home }) => {
   return (
@@ -57,5 +57,5 @@ export const Layout: React.FC<Properties> = ({ children, home }) => {
         </div>
       )}
     </div>
-  );
-};
+  )
+}
