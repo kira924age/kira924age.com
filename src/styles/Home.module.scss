@@ -1,4 +1,4 @@
-.iconImage img {
+.icon-image img {
   border-radius: 100%;
   margin-bottom: 1rem;
 }
@@ -13,15 +13,14 @@
 
 .container {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   justify-content: center;
   align-items: center;
   margin-bottom: 2rem;
   width: 100%;
 }
 
-.accountItem {
+.account-item {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -32,8 +31,8 @@
   a {
     width: 60px;
     height: 60px;
-    background: "transparent";
-    margin-bottom:0.2rem;
+    background: 'transparent';
+    margin-bottom: 0.2rem;
 
     img {
       border-radius: 10%;

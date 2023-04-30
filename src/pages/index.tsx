@@ -29,7 +29,7 @@ const AccountItem: React.FC<AccountItemProperties> = ({
   src,
 }) => {
   return (
-    <div className={styles.accountItem}>
+    <div className={styles['account-item']}>
       <a href={href} target="_blank" rel="noopener noreferrer">
         <Image src={src} alt={alt} width={60} height={60} />
       </a>
@@ -89,7 +89,7 @@ const Home: React.FC = () => {
       </Head>
 
       <header className={styles.header}>
-        <div className={styles.iconImage}>
+        <div className={styles['icon-image']}>
           <Image
             src="/images/profile.png"
             width={100}
@@ -97,7 +97,7 @@ const Home: React.FC = () => {
             alt="kira924age"
           />
         </div>
-        <div className={utilStyles.headingXl}>kira924age</div>
+        <div className={utilStyles['heading-xl']}>kira924age</div>
         <p>anime otaku</p>
       </header>
 
