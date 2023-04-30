@@ -1,6 +1,7 @@
 import Head from 'next/head'
-import { Layout } from "../components/layout"
-   
+import React from 'react'
+import { Layout } from '../components/layout'
+
 const Anime: React.FC = () => {
   return (
     <Layout>
@@ -9,9 +10,7 @@ const Anime: React.FC = () => {
       </Head>
       <h2>Anime</h2>
       <p>アニメに関連することはこのページに書く予定です</p>
-      
       <h3>Favorite Anime</h3>
-      
       Following list shows my favorite anime.
       <ul>
         <li>ローリング☆ガールズ (THE ROLLING GIRLS)</li>

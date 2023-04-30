@@ -11,8 +11,9 @@
     "lint:fix": "next lint --dir src --fix"
   },
   "lint-staged": {
-    "*.{ts,vue}": "eslint",
-    "*.{css,scss,vue}": "stylelint"
+    "*.{ts,tsx}": "eslint --fix",
+    "*.{css,scss,vue}": "stylelint --fix",
+    "*": "prettier -w -u"
   },
   "prettier": {
     "singleQuote": true,
