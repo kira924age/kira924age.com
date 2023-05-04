@@ -10,11 +10,6 @@
     "lint": "next lint --dir src",
     "lint:fix": "next lint --dir src --fix"
   },
-  "lint-staged": {
-    "*.{ts,tsx}": "eslint --fix",
-    "*.{css,scss}": "stylelint --fix",
-    "*": "prettier -w -u"
-  },
   "prettier": {
     "singleQuote": true,
     "semi": false
