@@ -26,6 +26,7 @@ const Anime: React.FC = () => {
         <li>ゾンビランドサガ</li>
         <li>とある科学の超電磁砲 (Toaru Kagaku no Railgun)</li>
         <li>鋼の錬金術師 FULLMETAL ALCHEMIST</li>
+        <li>Do It Yourself!! -どぅー・いっと・ゆあせるふ-</li>
         <li>メイドインアビス (Made in Abyss)</li>
         <li>ゆるキャン△ (Yuru Camp)</li>
         <li>銀の匙 Silver Spoon (Gin no Saji Silver Spoon)</li>
