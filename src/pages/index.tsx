@@ -39,7 +39,6 @@ const AccountItem: React.FC<AccountItemProperties> = ({
 }
 
 type ProductItemProperties = {
-  name: string
   productUrl: string
   githubUrl: string
   articleUrl: string
@@ -47,7 +46,6 @@ type ProductItemProperties = {
 }
 
 const ProductItem: React.FC<ProductItemProperties> = ({
-  name,
   productUrl,
   githubUrl,
   articleUrl,
@@ -55,7 +53,6 @@ const ProductItem: React.FC<ProductItemProperties> = ({
 }) => {
   return (
     <>
-      <li>{name}</li>
       <li>
         URL:{' '}
         <a href={productUrl} target="_blank" rel="noopenner noreferrer">
