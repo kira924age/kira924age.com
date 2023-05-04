@@ -10,11 +10,11 @@
     "plugin:unicorn/recommended",
     "prettier"
   ],
-  "plugins": ["@typescript-eslint", "import", "react" ],
+  "plugins": ["@typescript-eslint", "import", "react"],
   "parser": "@typescript-eslint/parser",
   "rules": {
     "sort-imports": 0,
-    "import/order": [2, {"alphabetize": {"order": "asc"}}],
+    "import/order": [2, { "alphabetize": { "order": "asc" } }],
     "quotes": ["error", "single"]
   }
 }

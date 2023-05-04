@@ -117,7 +117,6 @@ const Home: React.FC = () => {
         <li>Codeforces Problems</li>
         <ul>
           <ProductItem
-            name="Codeforces Problems"
             productUrl="https://cf.kira924age.com/#/table/"
             githubUrl="https://github.com/kira924age/CodeforcesProblems"
             articleUrl="https://kira000.hatenadiary.jp/entry/2021/03/06/123556"
