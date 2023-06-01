@@ -25,6 +25,7 @@ const Song: React.FC = () => {
         <li>終わらない歌 (Owaranai Uta)</li>
         <li>白金ディスコ (Platinum Disco)</li>
         <li>リアルワールド (Real World)</li>
+        <li>神のまにまに (Kami no Manimani)</li>
       </ul>
     </Layout>
   );
