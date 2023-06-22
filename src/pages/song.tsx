@@ -27,6 +27,7 @@ const Song: React.FC = () => {
         <li>リアルワールド (Real World)</li>
         <li>神のまにまに (Kami no Manimani)</li>
         <li>again / YUI</li>
+        <li>BELIEVE IN NEXUS</li>
       </ul>
     </Layout>
   );
