@@ -35,7 +35,9 @@ const Anime: React.FC = () => {
         <li>私に天使が舞い降りた! (Watashi ni Tenshi ga Maiorita!)</li>
         <li>刀語 (Katanagatari)</li>
         <li>物語シリーズ (Monogatari Series)</li>
+        <li>幼女戦記 (Youjo Senki)</li>
         <li>響け！ユーフォニアム (Sound! Euphonium)</li>
+        <li>チェンソーマン (Chainsaw Man)</li>
         <li>さくら荘のペットな彼女 (The Pet Girl of Sakurasou)</li>
         <li>うたわれるもの (Utawarerumono)</li>
         <li>
@@ -52,6 +54,7 @@ const Anime: React.FC = () => {
         </li>
         <li>もののけ姫 (Mononoke Hime)</li>
         <li>魔女の宅急便 (Majo no Takkyuubin)</li>
+        <li>シャドーハウス (Shadows House)</li>
         <li>ノーゲーム・ノーライフ (NO GAME NO LIFE)</li>
         <li>のんのんびより (Non Non Biyori)</li>
         <li>N・H・Kにようこそ！ (Welcome to the N.H.K.)</li>
