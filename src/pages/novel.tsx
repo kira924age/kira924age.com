@@ -1,6 +1,6 @@
-import Head from 'next/head';
-import React from 'react';
-import { Layout } from '../components/layout';
+import Head from 'next/head'
+import React from 'react'
+import { Layout } from '../components/layout'
 
 const Novel: React.FC = () => {
   return (
@@ -21,7 +21,7 @@ const Novel: React.FC = () => {
         <li>たったひとつの冴えたやりかた (The Only Neat Thing to Do)</li>
       </ul>
     </Layout>
-  );
-};
+  )
+}
 
-export default Novel;
+export default Novel

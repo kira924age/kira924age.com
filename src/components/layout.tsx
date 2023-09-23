@@ -10,7 +10,7 @@ type Properties = {
 
 export const Layout: React.FC<Properties> = ({ children, home }) => {
   return (
-    <div className={styles.container}>
+    <div className={styles['container']}>
       <Head>
         <link
           rel="apple-touch-icon"

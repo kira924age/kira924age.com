@@ -85,7 +85,8 @@ const Home: React.FC = () => {
         <title>kira924age.com</title>
       </Head>
 
-      <header className={styles.header}>
+      {/* <header className={styles.header}> */}
+      <header className={styles['header']}>
         <div className={styles['icon-image']}>
           <Image
             src="/images/profile.png"
@@ -142,7 +143,7 @@ const Home: React.FC = () => {
       </ul>
 
       <h3>Accounts</h3>
-      <div className={styles.container}>
+      <div className={styles['container']}>
         <AccountItem
           name="Twitter"
           href="https://twitter.com/kira924age/"
