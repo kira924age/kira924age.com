@@ -13,6 +13,7 @@ const Song: React.FC = () => {
       <h3>Favorite Song</h3>
       Following list shows my favorite song.
       <ul>
+        <li>only my railgun</li>
         <li>STONES</li>
         <li>ヨミガエレ (Yomigaere)</li>
         <li>傷跡 (Kizuato)</li>
