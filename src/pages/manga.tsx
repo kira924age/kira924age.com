@@ -27,6 +27,7 @@ const Manga: React.FC = () => {
         <li>欠けた月とドーナッツ (Kaketa Tsuki to Doughnut)</li>
         <li>少女終末旅行</li>
         <li>千早さんはそのままでいい</li>
+        <li>まちカドまぞく(Machikado Mazoku)</li>
       </ul>
     </Layout>
   )

@@ -35,6 +35,7 @@ const Anime: React.FC = () => {
         <li>私に天使が舞い降りた! (Watashi ni Tenshi ga Maiorita!)</li>
         <li>刀語 (Katanagatari)</li>
         <li>物語シリーズ (Monogatari Series)</li>
+        <li>まちカドまぞく(Machikado Mazoku)</li>
         <li>幼女戦記 (Youjo Senki)</li>
         <li>響け！ユーフォニアム (Sound! Euphonium)</li>
         <li>チェンソーマン (Chainsaw Man)</li>
