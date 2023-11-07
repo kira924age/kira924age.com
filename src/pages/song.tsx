@@ -15,20 +15,23 @@ const Song: React.FC = () => {
       <ul>
         <li>only my railgun</li>
         <li>STONES</li>
-        <li>ヨミガエレ (Yomigaere)</li>
-        <li>傷跡 (Kizuato)</li>
-        <li>夕立方程式 (Yuudachi Houteishiki)</li>
-        <li>キミガタメ (Kimigatame)</li>
-        <li>アオくユレている (Aokuyureteiru)</li>
-        <li>情熱の薔薇 (Jounetsu no Bara)</li>
-        <li>1000のバイオリン (Sen no Violin)</li>
-        <li>月の爆撃機 (Tsuki no Bakugekiki)</li>
-        <li>終わらない歌 (Owaranai Uta)</li>
-        <li>白金ディスコ (Platinum Disco)</li>
-        <li>リアルワールド (Real World)</li>
-        <li>神のまにまに (Kami no Manimani)</li>
+        <li>ヨミガエレ</li>
+        <li>傷跡</li>
+        <li>夕立方程式</li>
+        <li>キミガタメ</li>
+        <li>アオくユレている</li>
+        <li>ロクデナシ</li>
+        <li>情熱の薔薇</li>
+        <li>1000のバイオリン</li>
+        <li>月の爆撃機</li>
+        <li>終わらない歌</li>
+        <li>白金ディスコ</li>
+        <li>リアルワールド</li>
+        <li>神のまにまに</li>
         <li>again / YUI</li>
         <li>BELIEVE IN NEXUS</li>
+        <li>正解はひとつ!じゃない!!</li>
+        <li>月光</li>
       </ul>
     </Layout>
   )
