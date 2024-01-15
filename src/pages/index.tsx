@@ -138,7 +138,7 @@ const Home: React.FC = () => {
           <Link href="/novel">Novel</Link>
         </li>
         <li>
-          <Link href="/song">Song</Link>
+          <Link href="/music">Music</Link>
         </li>
       </ul>
 

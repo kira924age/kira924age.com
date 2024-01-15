@@ -2,16 +2,16 @@ import Head from 'next/head'
 import React from 'react'
 import { Layout } from '../components/layout'
 
-const Song: React.FC = () => {
+const Music: React.FC = () => {
   return (
     <Layout>
       <Head>
-        <title>Favorite Song</title>
+        <title>Favorite Music</title>
       </Head>
-      <h2>Song</h2>
+      <h2>Music</h2>
       <p>好きな楽曲を紹介するページです。</p>
-      <h3>Favorite Song</h3>
-      Following list shows my favorite song.
+      <h3>Favorite Music</h3>
+      Following list shows my favorite music.
       <ul>
         <li>only my railgun</li>
         <li>STONES</li>
@@ -38,4 +38,4 @@ const Song: React.FC = () => {
   )
 }
 
-export default Song
+export default Music
