@@ -16,6 +16,7 @@ const Song: React.FC = () => {
         <li>only my railgun</li>
         <li>STONES</li>
         <li>ヨミガエレ</li>
+        <li>ミラクルカラーズ☆本日も異常ナシ!</li>
         <li>傷跡</li>
         <li>夕立方程式</li>
         <li>キミガタメ</li>
