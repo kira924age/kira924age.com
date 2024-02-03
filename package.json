@@ -1,5 +1,5 @@
 {
-  "name": "astro-boilerplate",
+  "name": "kira924age.com",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -57,6 +57,5 @@
   },
   "volta": {
     "node": "18.19.0"
-  },
-  "author": "Ixartz (https://github.com/ixartz)"
+  }
 }
