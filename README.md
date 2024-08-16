@@ -1,11 +1,21 @@
 # kira924age.com
 
-kira924age's web site.
-
-## How to run server
+## CLI Commands
 
 ```bash
-$ npm ci
-$ npm run dev
+# install dependencies
+npm install
+
+# serve with hot reload at localhost:8080
+npm run dev
+
+# build for production with minification
+npm run build
+
+# test the production build locally
+npm run serve
+
+# run tests with jest and enzyme
+npm run test
 ```
 
