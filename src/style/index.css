@@ -29,18 +29,21 @@ body {
   min-height: 100vh;
 }
 
+#app {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+}
+
 #app > main {
   display: flex;
-  padding-top: 3.5rem;
-  margin: 3rem auto;
+  padding-top: 56px;
+  flex-grow: 1;
+  margin: 1.5rem 1rem;
   min-height: calc(100vh - 3.5rem);
   max-width: 1280px;
   align-items: flex-start;
   justify-content: center;
-}
-
-@media (max-width: 639px) {
-  #app > main {
-    margin: 3rem 2rem;
-  }
 }
