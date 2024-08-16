@@ -7,6 +7,7 @@ import Header from "./header";
 import Home from "../routes/home";
 import Anime from "../routes/anime";
 import Manga from "../routes/manga";
+import Music from "../routes/music";
 
 const App = () => (
   <div id="app">
@@ -16,6 +17,7 @@ const App = () => (
         <Home path="/" />
         <Anime path="/anime" />
         <Manga path="/manga" />
+        <Music path="/music" />
       </Router>
     </main>
   </div>
