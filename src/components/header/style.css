@@ -20,18 +20,21 @@
   padding: 0 1rem;
   color: #fff;
   text-decoration: none;
-  line-height: 56px;
+  height: 36px;
+  line-height: 36px;
 }
 
 .header a:hover,
 .header a:active {
-  background: rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  background: #3f3f46;
 }
 
 .header a.logo {
   display: flex;
   align-items: center;
   padding: 0.5rem 1rem;
+  margin: 0 1rem;
 }
 
 .logo h1 {
@@ -47,6 +50,12 @@
   }
 }
 
-.header nav a.active {
-  background: rgba(0, 0, 0, 0.4);
+.header nav {
+  display: flex;
+  align-items: center;
+  margin: 0 1rem;
+}
+
+header nav a.active {
+  color: #a8b1ff;
 }
