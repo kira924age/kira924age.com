@@ -18,4 +18,3 @@ npm run serve
 # run tests with jest and enzyme
 npm run test
 ```
-
