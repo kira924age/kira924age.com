@@ -20,6 +20,9 @@ const Header = () => (
       <Link activeClassName={style.active} href="/anime">
         Anime
       </Link>
+      <Link activeClassName={style.active} href="/manga">
+        Manga
+      </Link>
     </nav>
   </header>
 );
