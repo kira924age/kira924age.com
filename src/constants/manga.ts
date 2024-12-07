@@ -19,4 +19,5 @@ export const FAVORITE_MANGA_LIST: Manga[] = [
   { id: 12, name: "少女終末旅行 (Shoujo Shuumatsu Ryokou)" },
   { id: 13, name: "千早さんはそのままでいい" },
   { id: 14, name: "まちカドまぞく(Machikado Mazoku)" },
+  { id: 15, name: "ぼっち・ざ・ろっく！ (Bocchi the Rock!)" },
 ];
