@@ -1,0 +1,47 @@
+:root {
+  font-family: "Helvetica Neue", arial, sans-serif;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  color-scheme: light dark;
+  color: #444;
+  background: #fafafa;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color: #fff;
+    background: #1c1c1c;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#app {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  color: #444;
+}
+
+#app > main {
+  max-width: 920px;
+  margin: 2rem auto;
+  padding-top: 62px;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  font-family: sans-serif;
+  line-height: 1.6;
+  color: white;
+  width: 100%;
+  font-size: 0.85rem;
+}

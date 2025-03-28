@@ -1,20 +1,11 @@
 # kira924age.com
 
-## CLI Commands
+## How to develop
 
-```bash
-# install dependencies
-npm install
+Following command will start a development server on http://localhost:5173.
 
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# test the production build locally
-npm run serve
-
-# run tests with jest and enzyme
-npm run test
 ```
+npm ci
+npm run dev
+```
+

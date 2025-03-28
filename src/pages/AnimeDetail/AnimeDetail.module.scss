@@ -1,0 +1,105 @@
+.animeDetailContainer {
+  width: 100%;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 10px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #222;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  color: #ddd;
+}
+
+.breadcrumb {
+  margin-bottom: 1rem;
+  font-size: 0.75rem;
+  display: flex;
+  align-items: center;
+  a {
+    text-decoration: none;
+    color: #66aaff;
+    transition: color 0.3s ease;
+    &:hover {
+      color: #005fa3;
+    }
+  }
+}
+.separator {
+  margin: 0 0.3rem;
+}
+
+.current {
+  color: #ccc;
+}
+
+.infoSection {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.header {
+  margin-bottom: 32px;
+  .title {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 16px;
+  }
+
+  .tags {
+    display: flex;
+    gap: 0.5rem;
+    .tag {
+      background-color: #888;
+      color: #fff;
+      padding: 0.1rem 0.25rem;
+      border-radius: 4px;
+      font-size: 0.6rem; /* タグをさらに小さく */
+    }
+  }
+}
+
+.impressionsSection {
+}
+
+.impressionsLabel {
+  font-weight: bold;
+  font-size: 0.85rem;
+}
+
+.pvSection {
+  .pvLabel {
+    font-weight: bold;
+    font-size: 0.85rem;
+    margin-bottom: 8px;
+  }
+  .pvContainer {
+    iframe {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      border: none;
+      border-radius: 8px;
+    }
+  }
+}
+
+.danimeButton {
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  background-color: #8c3615;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  transition:
+    background-color 0.3s ease,
+    transform 0.3s ease;
+  &:hover {
+    background-color: #7a2d13;
+    transform: translateY(-2px);
+  }
+}

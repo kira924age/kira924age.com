@@ -1,0 +1,141 @@
+.animeContainer {
+  max-width: 920px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #fafafa;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #222;
+  font-size: 0.85rem; // 全体の基本フォントサイズ
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 2rem;
+
+  .mainTitle {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 0.3rem;
+  }
+
+  .subTitle {
+    font-size: 0.85rem;
+    color: #555;
+  }
+}
+
+.animeGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+
+  @media (min-width: 600px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: 800px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media (min-width: 1100px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.animeCard {
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.animeImage {
+  width: 100%;
+  height: auto;
+  display: block;
+  max-height: 240px;
+  object-fit: cover;
+}
+
+.cardContent {
+  padding: 8px 16px;
+
+  .cardTitle {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+
+  .description {
+    font-size: 0.85rem;
+    margin-bottom: 0.75rem;
+    color: #666;
+  }
+}
+
+.tags {
+  margin-bottom: 0.75rem;
+
+  .tag {
+    display: inline-block;
+    background-color: #eee;
+    color: #555;
+    padding: 0.1rem 0.25rem;
+    border-radius: 4px;
+    margin-right: 0.3rem;
+    font-size: 10px;
+  }
+}
+
+.year {
+  font-size: 0.75rem;
+  color: #999;
+}
+
+.copyRight {
+  padding: 4px 8px;
+  font-size: 12px;
+  text-align: left;
+  border-top: 1px solid #e0e0e0;
+  background-color: #2b2b2b;
+  border-top: 1px solid #444;
+  color: #aaa;
+}
+
+@media (prefers-color-scheme: dark) {
+  .animeContainer {
+    background-color: #222;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    color: #ddd;
+  }
+
+  .header .subTitle,
+  .cardContent .description,
+  .year {
+    color: #ccc;
+  }
+
+  .animeCard {
+    background-color: #333;
+  }
+
+  .tags {
+    .tag {
+      background-color: #444;
+      color: #bbb;
+    }
+  }
+}
