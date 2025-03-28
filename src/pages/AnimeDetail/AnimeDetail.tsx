@@ -1,12 +1,14 @@
-import { h } from "preact";
-import { Link } from "preact-router";
-import { FAVORITE_ANIME_LIST } from "@/constants/anime";
+import { Link } from "preact-router/match";
+
+// @ts-ignore
+import { FAVORITE_ANIME_LIST } from "@/constants/anime.ts";
 import styles from "./AnimeDetail.module.scss";
 
-export const AnimeDetail = (props) => {
+export const AnimeDetail = (props: { animeId: string | undefined }) => {
   const { animeId } = props;
 
   const animeData = FAVORITE_ANIME_LIST.find(
+    // @ts-ignore
     (anime) => String(anime.id) === animeId,
   );
 
@@ -17,7 +19,8 @@ export const AnimeDetail = (props) => {
   return (
     <div class={styles.animeDetailContainer}>
       <div class={styles.breadcrumb}>
-        <Link href="/anime" class={styles.breadcrumbLink}>
+        {/* @ts-ignore */}
+        <Link className={styles.breadcrumbLink} href="/anime">
           Anime List
         </Link>
         <span class={styles.separator}>&gt;</span>
@@ -32,7 +35,7 @@ export const AnimeDetail = (props) => {
             >{`${animeData.name} (全${animeData.episode}話)`}</div>
             {animeData.tags && (
               <div class={styles.tags}>
-                {animeData.tags.map((tag, index) => (
+                {animeData.tags.map((tag: string, index: number) => (
                   <span key={index} class={styles.tag}>
                     {tag}
                   </span>

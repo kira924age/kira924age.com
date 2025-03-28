@@ -1,7 +1,6 @@
 import { Router, Route } from "preact-router";
 
 import { Header } from "@/components/Header";
-
 import { Anime } from "@/pages/Anime";
 import { AnimeDetail } from "@/pages/AnimeDetail";
 import { Home } from "@/pages/Home";
@@ -15,8 +14,11 @@ export const App = () => (
     <Header />
     <main>
       <Router>
+        {/* @ts-ignore */}
         <Home path="/" />
+        {/* @ts-ignore */}
         <Route path="/anime" component={Anime} />
+        {/* @ts-ignore */}
         <AnimeDetail path="/anime/:animeId" />
       </Router>
     </main>

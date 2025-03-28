@@ -5,6 +5,9 @@ export type Anime = {
   tags?: string[];
   impressions?: string;
   dAnimeUrl?: string;
+  image?: string;
+  pvUrl?: string;
+  copyright?: string;
 };
 
 export const FAVORITE_ANIME_LIST: Anime[] = [
