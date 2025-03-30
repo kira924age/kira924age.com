@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "preact": "^10.26.2",
-    "preact-router": "^4.1.2"
+    "react-router": "^7.4.1"
   },
   "devDependencies": {
     "@preact/preset-vite": "^2.10.1",

@@ -1,4 +1,4 @@
-import { Router, Route } from "preact-router";
+import { Routes, Route } from "react-router";
 
 import { Header } from "@/components/Header";
 import { Anime } from "@/pages/Anime";
@@ -13,14 +13,11 @@ export const App = () => (
   <>
     <Header />
     <main>
-      <Router onChange={() => window.scrollTo(0, 0)}>
-        {/* @ts-ignore */}
-        <Home path="/" />
-        {/* @ts-ignore */}
-        <Route path="/anime" component={Anime} />
-        {/* @ts-ignore */}
-        <AnimeDetail path="/anime/:animeId" />
-      </Router>
+      <Routes>
+        <Route index element={<Home />} />
+        <Route path="/anime" element={<Anime />} />
+        <Route path="/anime/:animeId" element={<AnimeDetail />} />
+      </Routes>
     </main>
   </>
 );

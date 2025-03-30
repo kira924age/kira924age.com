@@ -1,4 +1,4 @@
-import { Link } from "preact-router/match";
+import { Link, useParams } from "react-router";
 
 // @ts-ignore
 import { FAVORITE_ANIME_LIST } from "@/constants/anime.ts";
@@ -6,8 +6,8 @@ import { FAVORITE_ANIME_LIST } from "@/constants/anime.ts";
 import styles from "./AnimeDetail.module.scss";
 import commonStyles from "@/styles/commonStyles.module.scss";
 
-export const AnimeDetail = (props: { animeId: string | undefined }) => {
-  const { animeId } = props;
+export const AnimeDetail = () => {
+  const { animeId } = useParams();
 
   const animeData = FAVORITE_ANIME_LIST.find(
     // @ts-ignore
@@ -21,8 +21,7 @@ export const AnimeDetail = (props: { animeId: string | undefined }) => {
   return (
     <div class={commonStyles.pageContainer}>
       <div class={styles.breadcrumb}>
-        {/* @ts-ignore */}
-        <Link className={styles.breadcrumbLink} href="/anime">
+        <Link className={styles.breadcrumbLink} to="/anime">
           Anime List
         </Link>
         <span class={styles.separator}>&gt;</span>

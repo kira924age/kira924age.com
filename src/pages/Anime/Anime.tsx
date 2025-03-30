@@ -1,4 +1,4 @@
-import { Link } from "preact-router/match";
+import { Link } from "react-router";
 // @ts-ignore
 import { FAVORITE_ANIME_LIST } from "@/constants/anime";
 
@@ -20,7 +20,7 @@ export const Anime = () => {
         {/* @ts-ignore */}
         {FAVORITE_ANIME_LIST.map((anime) => (
           // @ts-ignore
-          <Link href={"/anime/" + anime.id}>
+          <Link to={"/anime/" + anime.id}>
             <div class={styles.animeCard} key={anime.id}>
               {anime.image && (
                 <img

@@ -1,5 +1,5 @@
 import { useState } from "preact/hooks";
-import { Link } from "preact-router/match";
+import { Link } from "react-router";
 
 import styles from "./Header.module.scss";
 
@@ -11,28 +11,18 @@ export const Header = () => {
   return (
     <header className={styles.header}>
       <div className={styles.logo}>
-        {/* @ts-ignore */}
-        <Link href="/">kira924age.com</Link>
+        <Link to="/">kira924age.com</Link>
       </div>
       <nav className={`${styles.nav} ${menuOpen ? styles.open : ""}`}>
         <ul>
           <li>
-            {/* @ts-ignore */}
-            <Link activeClassName={styles.active} href="/anime">
-              anime
-            </Link>
+            <Link to="/anime">anime</Link>
           </li>
           <li>
-            {/* @ts-ignore */}
-            <Link activeClassName={styles.active} href="/manga">
-              manga
-            </Link>
+            <Link to="/manga">manga</Link>
           </li>
           <li>
-            {/* @ts-ignore */}
-            <Link activeClassName={styles.active} href="/music">
-              music
-            </Link>
+            <Link to="/music">music</Link>
           </li>
         </ul>
       </nav>
