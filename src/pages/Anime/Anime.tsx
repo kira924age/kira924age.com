@@ -1,11 +1,13 @@
 import { Link } from "preact-router/match";
 // @ts-ignore
 import { FAVORITE_ANIME_LIST } from "@/constants/anime";
+
 import styles from "./Anime.module.scss";
+import commonStyles from "@/styles/commonStyles.module.scss";
 
 export const Anime = () => {
   return (
-    <div class={styles.animeContainer}>
+    <div class={commonStyles.pageContainer}>
       <div class={styles.header}>
         <p class={styles.mainTitle}>My Favorite Anime</p>
         <p class={styles.subTitle}>

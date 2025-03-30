@@ -1,4 +1,5 @@
 import styles from "./Home.module.scss";
+import commonStyles from "@/styles/commonStyles.module.scss";
 
 interface ResourceProps {
   title: string;
@@ -17,7 +18,7 @@ const Resource = (props: ResourceProps) => {
 
 export const Home = () => {
   return (
-    <div class={styles.home}>
+    <div class={commonStyles.pageContainer}>
       <div class={styles.intro}>
         <div className={styles.heading}>Hi there, I'm kira924age</div>
         <p>

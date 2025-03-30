@@ -18,15 +18,21 @@ export const Header = () => {
         <ul>
           <li>
             {/* @ts-ignore */}
-            <Link href="/anime">anime</Link>
+            <Link activeClassName={styles.active} href="/anime">
+              anime
+            </Link>
           </li>
           <li>
             {/* @ts-ignore */}
-            <Link href="/manga">manga</Link>
+            <Link activeClassName={styles.active} href="/manga">
+              manga
+            </Link>
           </li>
           <li>
             {/* @ts-ignore */}
-            <Link href="/music">music</Link>
+            <Link activeClassName={styles.active} href="/music">
+              music
+            </Link>
           </li>
         </ul>
       </nav>

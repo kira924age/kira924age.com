@@ -1,3 +1,5 @@
+import theRollingGirlsImgUrl from "@/assets/the-rolling-girls.webp";
+
 export type Anime = {
   id: number;
   name: string;
@@ -26,8 +28,7 @@ export const FAVORITE_ANIME_LIST: Anime[] = [
     impressions: `In this anime, an ordinary protagonist with no special powers becomes caught up in incidents occurring in various places and struggles alongside their comrades.
     They never become the main character; nevertheless, they always play an important role in the story. Even without special powers, even if you can’t be the protagonist, you might still be able to do something. That idea has had a tremendous influence on my philosophy.
         Moreover, it was through this anime that I discovered THE BLUE HEARTS.`,
-    image:
-      "https://image.annict.com/MGbNYxfCydcl5oQPaM9NcqVJVarfxYyOg_wDnVFrQfA/s:170:226/plain/s3://annict-user-contents/shrine/workimage/666/image/master-e5625d1b3aae0c49db1aea2c5680d47b.jpg@webp",
+    image: theRollingGirlsImgUrl,
     pvUrl: "https://www.youtube.com/embed/OSu2mbjvDgk?si=oxJuOq-DyLqsm5ms",
     copyright: "© 2015 The Rolling Girls 製作委員会",
     dAnimeUrl: "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11601",

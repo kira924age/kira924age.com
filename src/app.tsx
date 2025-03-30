@@ -10,10 +10,10 @@ import "./app.scss";
 // import Music from "../routes/music";
 
 export const App = () => (
-  <div id="app">
+  <>
     <Header />
     <main>
-      <Router>
+      <Router onChange={() => window.scrollTo(0, 0)}>
         {/* @ts-ignore */}
         <Home path="/" />
         {/* @ts-ignore */}
@@ -22,5 +22,5 @@ export const App = () => (
         <AnimeDetail path="/anime/:animeId" />
       </Router>
     </main>
-  </div>
+  </>
 );

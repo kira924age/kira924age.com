@@ -2,7 +2,9 @@ import { Link } from "preact-router/match";
 
 // @ts-ignore
 import { FAVORITE_ANIME_LIST } from "@/constants/anime.ts";
+
 import styles from "./AnimeDetail.module.scss";
+import commonStyles from "@/styles/commonStyles.module.scss";
 
 export const AnimeDetail = (props: { animeId: string | undefined }) => {
   const { animeId } = props;
@@ -17,7 +19,7 @@ export const AnimeDetail = (props: { animeId: string | undefined }) => {
   }
 
   return (
-    <div class={styles.animeDetailContainer}>
+    <div class={commonStyles.pageContainer}>
       <div class={styles.breadcrumb}>
         {/* @ts-ignore */}
         <Link className={styles.breadcrumbLink} href="/anime">
