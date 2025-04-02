@@ -9,7 +9,7 @@ export const Music = () => {
       <div class={styles.header}>
         <p class={styles.mainTitle}>My Favorite Music</p>
         <p class={styles.subTitle}>
-          Here are some of the musics that I truly love. Click on any card to
+          Here are some of the music that I truly love. Click on any card to
           learn more details!
         </p>
       </div>
