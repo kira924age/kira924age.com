@@ -1,0 +1,66 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.content {
+  box-sizing: border-box; /* 追加：padding を含めた全体の幅を指定 */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 288px; /* Drawer の幅を 288px に設定 */
+  height: 100%;
+  background-color: #1a1a1a;
+  color: #f0f0f0;
+  padding: 20px;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.3);
+  transform: translateX(-100%);
+  animation: slideIn 300ms forwards;
+  display: flex;
+  flex-direction: column;
+  z-index: 1001;
+}
+
+@keyframes slideIn {
+  to {
+    transform: translateX(0);
+  }
+}
+
+.siteTitle {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 1rem;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-grow: 1;
+
+  li {
+    a {
+      display: block; /* 幅 100% を確保 */
+      padding: 10px 15px; /* リンクの内側の余白 */
+      text-decoration: none;
+      color: inherit;
+      font-size: 16px; /* 各リンク先の文字サイズを 16px に */
+      border-radius: 8px; /* 角を丸くする */
+      transition:
+        background-color 0.2s ease,
+        color 0.2s ease;
+
+      &:hover {
+        background-color: #333; /* ホバー時の背景色 */
+        color: #fff; /* ホバー時の文字色 */
+      }
+    }
+  }
+}
