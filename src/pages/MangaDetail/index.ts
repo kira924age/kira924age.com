@@ -1,0 +1,1 @@
+export { MangaDetail } from "./MangaDetail"
