@@ -33,8 +33,8 @@ export const Anime = () => {
                 <p class={styles.cardTitle}>{anime.name}</p>
                 {anime.tags && (
                   <div class={styles.tags}>
-                    {anime.tags.map((tag: string, index: number) => (
-                      <span key={index} class={styles.tag}>
+                    {anime.tags.map((tag: string) => (
+                      <span key={tag} class={styles.tag}>
                         {tag}
                       </span>
                     ))}

@@ -36,8 +36,8 @@ export const AnimeDetail = () => {
             >{`${animeData.name} (全${animeData.episode}話)`}</div>
             {animeData.tags && (
               <div class={styles.tags}>
-                {animeData.tags.map((tag: string, index: number) => (
-                  <span key={index} class={styles.tag}>
+                {animeData.tags.map((tag: string) => (
+                  <span key={tag} class={styles.tag}>
                     {tag}
                   </span>
                 ))}

@@ -35,8 +35,8 @@ export const Manga = () => {
                 {manga.tags && (
                   <div class={styles.tags}>
                     {/* @ts-ignore */}
-                    {manga.tags.map((tag: string, index: number) => (
-                      <span key={index} class={styles.tag}>
+                    {manga.tags.map((tag: string) => (
+                      <span key={tag} class={styles.tag}>
                         {tag}
                       </span>
                     ))}
