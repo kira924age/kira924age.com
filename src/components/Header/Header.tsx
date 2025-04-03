@@ -4,7 +4,7 @@ import { HamburgerButton } from "./HamburgerButton";
 import { Drawer } from "./Drawer";
 import styles from "./Header.module.scss";
 
-export const Header = () => {
+export const Header: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const toggleIsOpen = () => {
     setIsOpen((prev) => !prev);
