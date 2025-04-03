@@ -34,8 +34,8 @@ export const MangaDetail = () => {
             <div class={styles.title}>{`${animeData.name}`}</div>
             {animeData.tags && (
               <div class={styles.tags}>
-                {animeData.tags.map((tag: string, index: number) => (
-                  <span key={index} class={styles.tag}>
+                {animeData.tags.map((tag: string) => (
+                  <span key={tag} class={styles.tag}>
                     {tag}
                   </span>
                 ))}
