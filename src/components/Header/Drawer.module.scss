@@ -39,6 +39,12 @@
   }
 }
 
+.active {
+  background-color: #333;
+  color: #a8b1ff;
+  border-radius: 8px;
+}
+
 .list {
   list-style: none;
   padding: 0;
@@ -46,20 +52,21 @@
   flex-grow: 1;
 
   li {
+    margin: 10px 0;
     a {
-      display: block; /* 幅 100% を確保 */
-      padding: 10px 15px; /* リンクの内側の余白 */
+      display: block;
+      padding: 10px 15px;
       text-decoration: none;
       color: inherit;
-      font-size: 16px; /* 各リンク先の文字サイズを 16px に */
-      border-radius: 8px; /* 角を丸くする */
+      font-size: 16px;
+      border-radius: 8px;
       transition:
         background-color 0.2s ease,
         color 0.2s ease;
 
       &:hover {
-        background-color: #333; /* ホバー時の背景色 */
-        color: #fff; /* ホバー時の文字色 */
+        background-color: #333;
+        color: #a8b1ff;
       }
     }
   }
