@@ -1,6 +1,7 @@
 // @ts-ignore
 import newGameImgUrl from "@/assets/manga/newGame.jpg";
 import mahoshojoNiAkogareteImgUrl from "@/assets/manga/mahoshojo-ni-akogarete.jpg";
+import akebiImgUrl from "@/assets/manga/akebi.jpg";
 
 export type Manga = {
   id: number;
@@ -28,7 +29,14 @@ export const FAVORITE_MANGA_LIST: Manga[] = [
     copyright: "© 小野中彰大・竹書房",
     volume: 11,
   },
-  { id: 2, name: "メイドインアビス (Made in Abyss)" },
+  {
+    id: 3,
+    name: "明日ちゃんのセーラー服",
+    image: akebiImgUrl,
+    tags: ["青春", "百合", "学園"],
+    copyright: "© 博・集英社",
+    volume: 15,
+  },
   { id: 3, name: "ゆゆ式 (Yuyushiki)" },
   { id: 4, name: "お兄ちゃんはおしまい！ (Oniichan wa Oshimai!" },
   { id: 5, name: "とある科学の超電磁砲 (Toaru Kagaku no Railgun)" },
@@ -42,4 +50,5 @@ export const FAVORITE_MANGA_LIST: Manga[] = [
   { id: 13, name: "千早さんはそのままでいい" },
   { id: 14, name: "まちカドまぞく(Machikado Mazoku)" },
   { id: 15, name: "ぼっち・ざ・ろっく！ (Bocchi the Rock!)" },
+  { id: 16, name: "メイドインアビス (Made in Abyss)" },
 ];
