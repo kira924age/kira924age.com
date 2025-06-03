@@ -9,17 +9,17 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@radix-ui/react-dialog": "^1.1.6",
+    "@radix-ui/react-dialog": "^1.1.14",
     "clsx": "^2.1.1",
-    "preact": "^10.26.2",
+    "preact": "^10.26.8",
     "react-router": "^7.6.1"
   },
   "devDependencies": {
     "@preact/preset-vite": "^2.10.1",
-    "@types/node": "^22.13.14",
+    "@types/node": "^22.15.29",
     "prettier": "3.5.3",
-    "sass": "^1.86.0",
-    "typescript": "~5.7.2",
+    "sass": "^1.89.1",
+    "typescript": "^5.8.3",
     "vite": "^6.3.5"
   },
   "volta": {
