@@ -30,7 +30,7 @@ export const Home = () => {
       </div>
 
       <div class={styles.works}>
-        <h1>My works</h1>
+        <div className={styles.heading}>My works</div>
         <div class={styles.resources}>
           <Resource
             title="Codeforces Problems"

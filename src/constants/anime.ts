@@ -116,4 +116,5 @@ export const FAVORITE_ANIME_LIST: Anime[] = [
   { id: 6211, name: "東京マグニチュード8.0 (Tokyo Magnitude 8.0)" },
   { id: 53356, name: "終末トレインどこへいく？" },
   { id: 2923, name: "しゅごキャラ！ (Shugo Chara!)" },
+  { id: 59791, name: "瑠璃の宝石 (Ruri no Houseki)" },
 ];

@@ -51,4 +51,5 @@ export const FAVORITE_MANGA_LIST: Manga[] = [
   { id: 14, name: "まちカドまぞく(Machikado Mazoku)" },
   { id: 15, name: "ぼっち・ざ・ろっく！ (Bocchi the Rock!)" },
   { id: 16, name: "メイドインアビス (Made in Abyss)" },
+  { id: 17, name: "瑠璃の宝石" },
 ];
