@@ -1,4 +1,5 @@
 import { FAVORITE_MUSIC_LIST } from "@/constants/music";
+import { Breadcrumb } from "@/components/Breadcrumb";
 
 import styles from "./Music.module.scss";
 import commonStyles from "@/styles/commonStyles.module.scss";
@@ -6,6 +7,8 @@ import commonStyles from "@/styles/commonStyles.module.scss";
 export const Music = () => {
   return (
     <div class={commonStyles.pageContainer}>
+      <Breadcrumb items={[{ label: "Home", to: "/" }, { label: "Music" }]} />
+
       <div class={styles.header}>
         <p class={styles.mainTitle}>My Favorite Music</p>
         <p class={styles.subTitle}>

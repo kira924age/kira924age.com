@@ -1,7 +1,8 @@
-import { Link, useParams } from "react-router";
+import { useParams } from "react-router";
 
 // @ts-ignore
 import { FAVORITE_ANIME_LIST } from "@/constants/anime.ts";
+import { Breadcrumb } from "@/components/Breadcrumb";
 
 import styles from "./AnimeDetail.module.scss";
 import commonStyles from "@/styles/commonStyles.module.scss";
@@ -20,13 +21,13 @@ export const AnimeDetail = () => {
 
   return (
     <div class={commonStyles.pageContainer}>
-      <div class={styles.breadcrumb}>
-        <Link className={styles.breadcrumbLink} to="/anime">
-          Anime List
-        </Link>
-        <span class={styles.separator}>&gt;</span>
-        <span class={styles.current}>{animeData.name}</span>
-      </div>
+      <Breadcrumb
+        items={[
+          { label: "Home", to: "/" },
+          { label: "Anime", to: "/anime" },
+          { label: animeData.name },
+        ]}
+      />
 
       <div class={styles.detailContent}>
         <div class={styles.infoSection}>

@@ -7,11 +7,13 @@ import {
 
 import { App } from "./app.tsx";
 import { Home } from "@/pages/Home";
+import { About } from "@/pages/About";
 import { Anime } from "@/pages/Anime";
 import { AnimeDetail } from "@/pages/AnimeDetail";
 import { Manga } from "@/pages/Manga";
 import { MangaDetail } from "@/pages/MangaDetail";
 import { Music } from "@/pages/Music";
+import { WorkDetail } from "@/pages/WorkDetail";
 
 import "./app.scss";
 
@@ -25,6 +27,8 @@ const router = createBrowserRouter([
     ),
     children: [
       { index: true, element: <Home /> },
+      { path: "about", element: <About /> },
+      { path: "works/:workId", element: <WorkDetail /> },
       { path: "anime", element: <Anime /> },
       { path: "anime/:animeId", element: <AnimeDetail /> },
       { path: "manga", element: <Manga /> },

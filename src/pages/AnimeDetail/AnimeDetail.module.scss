@@ -1,91 +1,102 @@
 .breadcrumb {
   margin-bottom: 1rem;
-  font-size: 0.75rem;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
+  gap: 0.25rem;
+  font-size: 0.92rem;
+  color: var(--text-muted);
+
   a {
     text-decoration: none;
-    color: #66aaff;
-    transition: color 0.3s ease;
+    color: var(--accent);
+    transition: color 0.2s ease;
+
     &:hover {
-      color: #005fa3;
+      color: var(--accent-strong);
     }
   }
 }
+
 .separator {
-  margin: 0 0.3rem;
+  margin: 0 0.2rem;
 }
 
 .current {
-  color: #ccc;
+  color: var(--text-primary);
 }
 
 .infoSection {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 1.25rem;
 }
 
 .header {
-  margin-bottom: 32px;
+  margin-bottom: 0.25rem;
+
   .title {
-    font-size: 1rem;
-    font-weight: bold;
-    margin-bottom: 16px;
+    margin: 0 0 0.75rem;
+    font-size: clamp(1.25rem, 2.8vw, 1.6rem);
+    line-height: 1.35;
+    font-weight: 700;
   }
 
   .tags {
     display: flex;
-    gap: 0.5rem;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+
     .tag {
-      background-color: #888;
-      color: #fff;
-      padding: 0.1rem 0.25rem;
-      border-radius: 4px;
-      font-size: 0.6rem;
+      background: rgba(71, 194, 255, 0.16);
+      color: #d3eeff;
+      padding: 0.2rem 0.45rem;
+      border-radius: 999px;
+      font-size: 0.76rem;
+      line-height: 1.2;
     }
   }
 }
 
-.impressionsLabel {
-  font-weight: bold;
-  font-size: 0.85rem;
+.impressionsLabel,
+.pvLabel {
+  font-weight: 700;
+  font-size: 1.02rem;
+  margin-bottom: 0.35rem;
 }
 
-.pvSection {
-  .pvLabel {
-    font-weight: bold;
-    font-size: 0.85rem;
-    margin-bottom: 8px;
-  }
-  .pvContainer {
-    iframe {
-      width: 100%;
-      aspect-ratio: 16 / 9;
-      border: none;
-      border-radius: 8px;
-    }
-  }
+.impressions {
+  margin: 0;
+  color: var(--text-muted);
+  line-height: 2;
+  font-size: 1.03rem;
+  white-space: pre-wrap;
+}
+
+.pvContainer iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 1px solid var(--surface-border);
+  border-radius: 12px;
+  background: #000;
 }
 
 .danimeButton {
   cursor: pointer;
-  display: inline-block;
-  text-align: center;
-  background-color: #8c3615;
+  width: fit-content;
+  padding: 0.6rem 1rem;
+  border-radius: 10px;
+  border: 1px solid #a64b25;
+  background: #8c3615;
   color: #fff;
-  padding: 0.5rem 1rem;
-  border-radius: 6px;
-  text-decoration: none;
-  font-size: 0.85rem;
-  font-weight: bold;
-  border: none;
-  outline: none;
+  font-size: 0.94rem;
+  font-weight: 700;
   transition:
-    background-color 0.3s ease,
-    transform 0.3s ease;
+    background-color 0.2s ease,
+    transform 0.2s ease;
+
   &:hover {
-    background-color: #7a2d13;
-    transform: translateY(-2px);
+    background: #a7441d;
+    transform: translateY(-1px);
   }
 }

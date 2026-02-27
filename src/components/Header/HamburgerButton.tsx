@@ -10,6 +10,9 @@ type Props = {
 export const HamburgerButton: React.FC<Props> = ({ open, onClick }) => {
   return (
     <button
+      type="button"
+      aria-label={open ? "メニューを閉じる" : "メニューを開く"}
+      aria-expanded={open}
       className={styles.hamburgerButton}
       onClick={(e) => {
         e.stopPropagation();

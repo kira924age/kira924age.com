@@ -1,6 +1,7 @@
 import { Link } from "react-router";
 // @ts-ignore
 import { FAVORITE_MANGA_LIST } from "@/constants/manga";
+import { Breadcrumb } from "@/components/Breadcrumb";
 
 import styles from "./Manga.module.scss";
 import commonStyles from "@/styles/commonStyles.module.scss";
@@ -8,6 +9,8 @@ import commonStyles from "@/styles/commonStyles.module.scss";
 export const Manga = () => {
   return (
     <div class={commonStyles.pageContainer}>
+      <Breadcrumb items={[{ label: "Home", to: "/" }, { label: "Manga" }]} />
+
       <div class={styles.header}>
         <p class={styles.mainTitle}>My Favorite Comics</p>
         <p class={styles.subTitle}>
@@ -20,8 +23,8 @@ export const Manga = () => {
         {/* @ts-ignore */}
         {FAVORITE_MANGA_LIST.map((manga) => (
           // @ts-ignore
-          <Link to={"/manga/" + manga.id}>
-            <div class={styles.animeCard} key={manga.id}>
+          <Link to={"/manga/" + manga.id} key={manga.id}>
+            <div class={styles.animeCard}>
               {manga.image && (
                 <img
                   src={manga.image}

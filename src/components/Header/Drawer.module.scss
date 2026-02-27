@@ -1,24 +1,27 @@
 .overlay {
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.62);
 }
 
 .content {
-  box-sizing: border-box; /* 追加：padding を含めた全体の幅を指定 */
+  box-sizing: border-box;
   position: fixed;
   top: 0;
   left: 0;
-  width: 288px; /* Drawer の幅を 288px に設定 */
+  width: min(86vw, 320px);
   height: 100%;
-  background-color: #1a1a1a;
-  color: #f0f0f0;
-  padding: 20px;
-  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.3);
-  transform: translateX(-100%);
-  animation: slideIn 300ms forwards;
+  padding: 1.2rem;
   display: flex;
   flex-direction: column;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0)),
+    var(--surface);
+  border-right: 1px solid var(--surface-border);
+  color: var(--text-primary);
+  box-shadow: 14px 0 34px rgba(0, 0, 0, 0.4);
+  transform: translateX(-100%);
+  animation: slideIn 280ms ease forwards;
   z-index: 1001;
 }
 
@@ -29,45 +32,53 @@
 }
 
 .siteTitle {
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 1rem;
+  font-family: var(--font-display);
+  margin: 0;
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
 
   a {
+    display: inline-block;
     text-decoration: none;
     color: inherit;
+    padding: 0.45rem 0.25rem;
   }
-}
-
-.active {
-  background-color: #333;
-  color: #a8b1ff;
-  border-radius: 8px;
 }
 
 .list {
   list-style: none;
   padding: 0;
-  margin: 0;
-  flex-grow: 1;
+  margin: 1rem 0 0;
+  display: grid;
+  gap: 0.35rem;
+}
 
-  li {
-    margin: 10px 0;
-    a {
-      display: block;
-      padding: 10px 15px;
-      text-decoration: none;
-      color: inherit;
-      font-size: 16px;
-      border-radius: 8px;
-      transition:
-        background-color 0.2s ease,
-        color 0.2s ease;
+.list li a {
+  font-family: var(--font-display);
+  display: block;
+  padding: 0.65rem 0.75rem;
+  border-radius: 10px;
+  text-decoration: none;
+  color: var(--text-muted);
+  font-size: 1rem;
+  font-weight: 600;
+  transition:
+    color 0.2s ease,
+    background-color 0.2s ease;
 
-      &:hover {
-        background-color: #333;
-        color: #a8b1ff;
-      }
-    }
+  &:hover {
+    color: var(--text-primary);
+    background: rgba(71, 194, 255, 0.12);
   }
+
+  &:focus-visible {
+    color: var(--text-primary);
+    background: rgba(71, 194, 255, 0.12);
+  }
+}
+
+.active a {
+  color: var(--text-primary);
+  background: rgba(71, 194, 255, 0.18);
 }

@@ -1,0 +1,105 @@
+.breadcrumb {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.92rem;
+  color: var(--text-muted);
+
+  a {
+    text-decoration: none;
+    color: var(--accent);
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: var(--accent-strong);
+    }
+  }
+}
+
+.separator {
+  margin: 0 0.2rem;
+}
+
+.current {
+  color: var(--text-primary);
+}
+
+.header {
+  margin-bottom: 1.5rem;
+}
+
+.title {
+  margin: 0;
+  font-size: clamp(1.25rem, 2.8vw, 1.6rem);
+  line-height: 1.35;
+  font-weight: 700;
+}
+
+.shortDescription {
+  margin: 0.6rem 0 0;
+  color: var(--text-muted);
+}
+
+.section {
+  margin-top: 1.1rem;
+
+  h2 {
+    margin: 0 0 0.5rem;
+    font-size: 1.06rem;
+  }
+
+  p {
+    margin: 0;
+    color: var(--text-muted);
+  }
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.tag {
+  background: rgba(71, 194, 255, 0.16);
+  color: #d3eeff;
+  padding: 0.2rem 0.45rem;
+  border-radius: 999px;
+  font-size: 0.76rem;
+  line-height: 1.2;
+}
+
+.liveUrl {
+  color: var(--accent);
+  word-break: break-all;
+  text-underline-offset: 0.16em;
+
+  &:hover {
+    color: var(--accent-strong);
+  }
+}
+
+.repositoryButton {
+  margin-top: 1.5rem;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  width: fit-content;
+  padding: 0.6rem 1rem;
+  border-radius: 10px;
+  border: 1px solid rgba(63, 213, 255, 0.36);
+  background: rgba(63, 213, 255, 0.14);
+  color: var(--text-primary);
+  font-size: 0.94rem;
+  font-weight: 700;
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
+
+  &:hover {
+    background: rgba(63, 213, 255, 0.22);
+    transform: translateY(-1px);
+  }
+}
