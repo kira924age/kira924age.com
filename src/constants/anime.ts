@@ -1,3 +1,4 @@
+import type { ImageMetadata } from "astro";
 import theRollingGirlsImgUrl from "@/assets/the-rolling-girls.webp";
 
 export type Anime = {
@@ -7,7 +8,7 @@ export type Anime = {
   tags?: string[];
   impressions?: string;
   dAnimeUrl?: string;
-  image?: string;
+  image?: ImageMetadata;
   pvUrl?: string;
   copyright?: string;
 };

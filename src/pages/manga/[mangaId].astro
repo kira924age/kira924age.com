@@ -1,0 +1,33 @@
+---
+import type { GetStaticPaths } from "astro";
+import Layout from "@/layouts/Layout.astro";
+import Breadcrumb from "@/components/Breadcrumb/Breadcrumb.astro";
+import { FAVORITE_MANGA_LIST, type Manga } from "@/constants/manga";
+
+export const getStaticPaths: GetStaticPaths = () =>
+  FAVORITE_MANGA_LIST.map((manga) => ({
+    params: { mangaId: String(manga.id) },
+    props: { manga },
+  }));
+
+interface Props {
+  manga: Manga;
+}
+
+const { manga } = Astro.props;
+---
+
+<Layout title={`${manga.name} | Manga | kira924age.com`} description={manga.name}>
+  <div class="pageContainer">
+    <Breadcrumb items={[{ label: "Home", to: "/" }, { label: "Manga", to: "/manga" }, { label: manga.name }]} />
+    <article>
+      {manga.image && <img src={manga.image.src} alt={manga.name} class="detailImage" />}
+      <header class="detailHeader">
+        <h1 class="pageTitle">{manga.name}</h1>
+        {manga.tags && <div class="tags">{manga.tags.map((tag) => <span class="tag">{tag}</span>)}</div>}
+      </header>
+      {manga.volume && <p class="detailMeta">全{manga.volume}巻</p>}
+      {manga.copyright && <p class="detailMeta">{manga.copyright}</p>}
+    </article>
+  </div>
+</Layout>

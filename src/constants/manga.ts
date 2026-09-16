@@ -1,4 +1,4 @@
-// @ts-ignore
+import type { ImageMetadata } from "astro";
 import newGameImgUrl from "@/assets/manga/newGame.jpg";
 import mahoshojoNiAkogareteImgUrl from "@/assets/manga/mahoshojo-ni-akogarete.jpg";
 import akebiImgUrl from "@/assets/manga/akebi.jpg";
@@ -6,7 +6,7 @@ import akebiImgUrl from "@/assets/manga/akebi.jpg";
 export type Manga = {
   id: number;
   name: string;
-  image?: string;
+  image?: ImageMetadata;
   copyright?: string;
   tags?: string[];
   volume?: number;
@@ -37,7 +37,7 @@ export const FAVORITE_MANGA_LIST: Manga[] = [
     copyright: "© 博・集英社",
     volume: 15,
   },
-  { id: 3, name: "ゆゆ式 (Yuyushiki)" },
+  { id: 18, name: "ゆゆ式 (Yuyushiki)" },
   { id: 4, name: "お兄ちゃんはおしまい！ (Oniichan wa Oshimai!" },
   { id: 5, name: "とある科学の超電磁砲 (Toaru Kagaku no Railgun)" },
   { id: 6, name: "はねバド！ (Hanebado!)" },

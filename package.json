@@ -4,23 +4,16 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc -b && vite build",
-    "preview": "vite preview"
-  },
-  "dependencies": {
-    "@radix-ui/react-dialog": "^1.1.14",
-    "clsx": "^2.1.1",
-    "preact": "^10.26.8",
-    "react-router": "^7.6.1"
+    "dev": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview"
   },
   "devDependencies": {
-    "@preact/preset-vite": "^2.10.1",
-    "@types/node": "^22.15.29",
-    "prettier": "3.5.3",
-    "sass": "^1.89.1",
-    "typescript": "^5.8.3",
-    "vite": "^6.3.5"
+    "@astrojs/check": "0.9.10",
+    "@types/node": "22.15.29",
+    "astro": "7.3.2",
+    "sass": "1.89.1",
+    "typescript": "5.8.3"
   },
   "volta": {
     "node": "24.1.0",

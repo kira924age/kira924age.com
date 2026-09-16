@@ -1,16 +1,9 @@
-export type Anime = {
+export type Music = {
   id: number;
   name: string;
-  episode?: number;
-  tags?: string[];
-  impressions?: string;
-  dAnimeUrl?: string;
-  image?: string;
-  pvUrl?: string;
-  copyright?: string;
 };
 
-export const FAVORITE_MUSIC_LIST: Anime[] = [
+export const FAVORITE_MUSIC_LIST: Music[] = [
   { id: 0, name: "REVENGE" },
   { id: 1, name: "only my railgun" },
   { id: 2, name: "STONES" },
