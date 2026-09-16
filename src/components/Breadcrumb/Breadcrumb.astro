@@ -1,0 +1,24 @@
+---
+type BreadcrumbItem = {
+  label: string;
+  to?: string;
+};
+
+interface Props {
+  items: BreadcrumbItem[];
+}
+
+const { items } = Astro.props;
+---
+
+<nav class="breadcrumb" aria-label="Breadcrumb">
+  {items.map((item, index) => {
+    const isCurrent = index === items.length - 1;
+    return (
+      <span class="breadcrumbItem">
+        {item.to && !isCurrent ? <a href={item.to}>{item.label}</a> : <span class:list={{ current: isCurrent }}>{item.label}</span>}
+        {!isCurrent && <span class="separator" aria-hidden="true">&gt;</span>}
+      </span>
+    );
+  })}
+</nav>

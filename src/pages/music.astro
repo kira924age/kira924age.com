@@ -1,0 +1,22 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Breadcrumb from "@/components/Breadcrumb/Breadcrumb.astro";
+import { FAVORITE_MUSIC_LIST } from "@/constants/music";
+---
+
+<Layout title="Music | kira924age.com" description="kira924age's favorite music.">
+  <div class="pageContainer">
+    <Breadcrumb items={[{ label: "Home", to: "/" }, { label: "Music" }]} />
+    <header class="contentHeader">
+      <h1 class="pageTitle">My Favorite Music</h1>
+      <p class="pageSubtitle">Here are some of the music that I truly love.</p>
+    </header>
+    <div class="cardGrid">
+      {FAVORITE_MUSIC_LIST.map((music) => (
+        <article class="favoriteCard">
+          <div class="cardContent"><h2 class="cardTitle">{music.name}</h2></div>
+        </article>
+      ))}
+    </div>
+  </div>
+</Layout>

@@ -1,1 +1,0 @@
-export { WorkDetail } from "./WorkDetail";

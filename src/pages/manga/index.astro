@@ -1,0 +1,33 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Breadcrumb from "@/components/Breadcrumb/Breadcrumb.astro";
+import { FAVORITE_MANGA_LIST } from "@/constants/manga";
+---
+
+<Layout title="Manga | kira924age.com" description="kira924age's favorite manga.">
+  <div class="pageContainer">
+    <Breadcrumb items={[{ label: "Home", to: "/" }, { label: "Manga" }]} />
+    <header class="contentHeader">
+      <h1 class="pageTitle">My Favorite Manga</h1>
+      <p class="pageSubtitle">
+        Here are some of the manga that I truly love. Select a title to learn
+        more details!
+      </p>
+    </header>
+
+    <div class="cardGrid">
+      {FAVORITE_MANGA_LIST.map((manga) => (
+        <a href={`/manga/${manga.id}`} class="cardLink">
+          <article class="favoriteCard">
+            {manga.image && <img src={manga.image.src} alt={manga.name} class="favoriteImage" loading="lazy" decoding="async" />}
+            <div class="cardContent">
+              <h2 class="cardTitle">{manga.name}</h2>
+              {manga.tags && <div class="tags">{manga.tags.map((tag) => <span class="tag">{tag}</span>)}</div>}
+            </div>
+            {manga.copyright && <div class="copyright">{manga.copyright}</div>}
+          </article>
+        </a>
+      ))}
+    </div>
+  </div>
+</Layout>

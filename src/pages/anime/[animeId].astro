@@ -1,0 +1,37 @@
+---
+import type { GetStaticPaths } from "astro";
+import Layout from "@/layouts/Layout.astro";
+import Breadcrumb from "@/components/Breadcrumb/Breadcrumb.astro";
+import { FAVORITE_ANIME_LIST, type Anime } from "@/constants/anime";
+
+export const getStaticPaths: GetStaticPaths = () =>
+  FAVORITE_ANIME_LIST.map((anime) => ({
+    params: { animeId: String(anime.id) },
+    props: { anime },
+  }));
+
+interface Props {
+  anime: Anime;
+}
+
+const { anime } = Astro.props;
+const episodeLabel = anime.episode ? ` (全${anime.episode}話)` : "";
+---
+
+<Layout title={`${anime.name} | Anime | kira924age.com`} description={anime.impressions ?? anime.name}>
+  <div class="pageContainer">
+    <Breadcrumb items={[{ label: "Home", to: "/" }, { label: "Anime", to: "/anime" }, { label: anime.name }]} />
+    <article>
+      {anime.image && <img src={anime.image.src} alt={anime.name} class="detailImage" />}
+      <header class="detailHeader">
+        <h1 class="pageTitle">{anime.name}{episodeLabel}</h1>
+        {anime.tags && <div class="tags">{anime.tags.map((tag) => <span class="tag">{tag}</span>)}</div>}
+      </header>
+
+      {anime.impressions && <section class="detailSection"><h2>Impressions</h2><p class="impressions">{anime.impressions}</p></section>}
+      {anime.pvUrl && <section class="detailSection"><h2>PV</h2><div class="media"><iframe src={anime.pvUrl} title={`${anime.name} PV`} loading="lazy" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></section>}
+      {anime.dAnimeUrl && <a class="externalButton" href={anime.dAnimeUrl} target="_blank" rel="noopener noreferrer">dアニメストアで視聴</a>}
+      {anime.copyright && <p class="detailMeta">{anime.copyright}</p>}
+    </article>
+  </div>
+</Layout>

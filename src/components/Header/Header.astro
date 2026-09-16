@@ -1,0 +1,81 @@
+---
+const pathname = Astro.url.pathname;
+const isActive = (path: string) =>
+  path === "/" ? pathname === "/" : pathname === path || pathname.startsWith(`${path}/`);
+---
+
+<header class="siteHeader">
+  <div class="headerContainer">
+    <button
+      class="mobileMenuTrigger"
+      type="button"
+      aria-label="メニューを開く"
+      aria-controls="mobile-menu-dialog"
+      aria-expanded="false"
+    >
+      <span class="hamburgerButton" aria-hidden="true">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </span>
+    </button>
+
+    <dialog class="mobileMenuDialog" id="mobile-menu-dialog">
+      <div class="mobileMenuPanel">
+        <div class="mobileMenuHeader">
+          <div>
+            <p class="mobileMenuKicker">Navigation</p>
+            <p class="mobileMenuTitle"><a href="/">kira924age.com</a></p>
+          </div>
+          <button class="mobileMenuClose" type="button" aria-label="メニューを閉じる">×</button>
+        </div>
+        <nav aria-label="モバイルナビゲーション">
+          <ul class="mobileMenuList">
+            <li class:list={{ active: isActive("/") }}><a href="/"><span class="menuNumber">01</span><span>Home</span><span class="menuArrow" aria-hidden="true">↗</span></a></li>
+            <li class:list={{ active: isActive("/anime") }}><a href="/anime"><span class="menuNumber">02</span><span>Anime</span><span class="menuArrow" aria-hidden="true">↗</span></a></li>
+            <li class:list={{ active: isActive("/manga") }}><a href="/manga"><span class="menuNumber">03</span><span>Manga</span><span class="menuArrow" aria-hidden="true">↗</span></a></li>
+            <li class:list={{ active: isActive("/music") }}><a href="/music"><span class="menuNumber">04</span><span>Music</span><span class="menuArrow" aria-hidden="true">↗</span></a></li>
+          </ul>
+        </nav>
+        <p class="mobileMenuFooter">Explore the archive</p>
+      </div>
+    </dialog>
+
+    <div class="logo"><a href="/">kira924age.com</a></div>
+    <nav class="desktopNav" aria-label="メインナビゲーション">
+      <ul>
+        <li><a class:list={{ active: isActive("/anime") }} href="/anime">anime</a></li>
+        <li><a class:list={{ active: isActive("/manga") }} href="/manga">manga</a></li>
+        <li><a class:list={{ active: isActive("/music") }} href="/music">music</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<script>
+  const menuDialog = document.querySelector<HTMLDialogElement>("#mobile-menu-dialog");
+  const menuTrigger = document.querySelector<HTMLButtonElement>(".mobileMenuTrigger");
+  const menuClose = document.querySelector<HTMLButtonElement>(".mobileMenuClose");
+
+  const closeMenu = () => {
+    if (menuDialog?.open) menuDialog.close();
+  };
+
+  menuTrigger?.addEventListener("click", () => {
+    if (!menuDialog?.open) menuDialog?.showModal();
+  });
+
+  menuClose?.addEventListener("click", closeMenu);
+  menuDialog?.addEventListener("click", (event) => {
+    if (event.target === menuDialog) closeMenu();
+  });
+  menuDialog?.addEventListener("close", () => {
+    menuTrigger?.setAttribute("aria-expanded", "false");
+  });
+  menuDialog?.addEventListener("cancel", () => {
+    menuTrigger?.setAttribute("aria-expanded", "false");
+  });
+  menuTrigger?.addEventListener("click", () => {
+    menuTrigger.setAttribute("aria-expanded", "true");
+  });
+</script>

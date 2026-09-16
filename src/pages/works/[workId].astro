@@ -1,0 +1,32 @@
+---
+import type { GetStaticPaths } from "astro";
+import Layout from "@/layouts/Layout.astro";
+import Breadcrumb from "@/components/Breadcrumb/Breadcrumb.astro";
+import { WORKS, type Work } from "@/constants/works";
+
+export const getStaticPaths: GetStaticPaths = () =>
+  WORKS.map((work) => ({
+    params: { workId: work.id },
+    props: { work },
+  }));
+
+interface Props {
+  work: Work;
+}
+
+const { work } = Astro.props;
+---
+
+<Layout title={`${work.title} | kira924age.com`} description={work.shortDescription}>
+  <div class="pageContainer">
+    <Breadcrumb items={[{ label: "Home", to: "/" }, { label: work.title }]} />
+    <header class="detailHeader">
+      <h1 class="pageTitle">{work.title}</h1>
+      <p class="detailDescription">{work.shortDescription}</p>
+    </header>
+    <section class="detailSection"><h2>Overview</h2><p>{work.overview}</p></section>
+    <section class="detailSection"><h2>Tech Stack</h2><div class="tags">{work.technologies.map((tech) => <span class="tag">{tech}</span>)}</div></section>
+    {work.liveUrl && <section class="detailSection"><h2>Live URL</h2><a href={work.liveUrl} target="_blank" rel="noopener noreferrer">{work.liveUrl}</a></section>}
+    <a class="externalButton" href={work.repositoryUrl} target="_blank" rel="noopener noreferrer">View on GitHub</a>
+  </div>
+</Layout>

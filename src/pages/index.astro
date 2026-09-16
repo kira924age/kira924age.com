@@ -1,0 +1,34 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Breadcrumb from "@/components/Breadcrumb/Breadcrumb.astro";
+import { WORKS } from "@/constants/works";
+---
+
+<Layout>
+  <div class="pageContainer">
+    <Breadcrumb items={[{ label: "Home" }]} />
+
+    <section class="homeIntro">
+      <h1 class="heading">Hi there, I'm kira924age</h1>
+      <p>
+        Welcome! I'm a web developer who enjoys anime and manga. I earned my
+        Bachelor of Engineering from The University of Electro-Communications
+        in March 2023. Explore my site to discover more about my works and
+        personal interests.
+        <a href="/about" class="moreLink">More about me</a>
+      </p>
+    </section>
+
+    <section>
+      <h2 class="heading">My works</h2>
+      <div class="resourceGrid">
+        {WORKS.map((work) => (
+          <a href={`/works/${work.id}`} class="resourceCard">
+            <h2>{work.title}</h2>
+            <p>{work.shortDescription}</p>
+          </a>
+        ))}
+      </div>
+    </section>
+  </div>
+</Layout>
