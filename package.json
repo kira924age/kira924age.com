@@ -3,6 +3,10 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "engines": {
+    "node": ">=24.1.0 <25"
+  },
+  "packageManager": "pnpm@10.26.1",
   "scripts": {
     "dev": "astro dev",
     "build": "astro check && astro build",
@@ -14,9 +18,5 @@
     "astro": "7.3.2",
     "sass": "1.104.1",
     "typescript": "5.8.3"
-  },
-  "volta": {
-    "node": "24.1.0",
-    "npm": "11.4.1"
   }
 }
