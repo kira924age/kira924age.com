@@ -21,6 +21,7 @@ export const WORKS: Work[] = [
       "TypeScript",
       "SCSS",
       "Cloudflare Pages",
+      "Cloudflare Zaraz",
       "Google Analytics",
     ],
     liveUrl: "https://kira924age.com",
