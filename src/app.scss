@@ -91,6 +91,7 @@ h1, h2, h3, .heading, .pageTitle, .mobileMenuTitle, .logo a { font-family: var(-
 .current { color: var(--text-primary); }
 .separator { color: var(--text-muted); }
 .pageTitle { margin: 0; font-size: clamp(1.25rem, 2.8vw, 1.6rem); line-height: 1.35; font-weight: 700; }
+.heading::before, .pageTitle::before { content: "> "; color: var(--accent); font-weight: 500; }
 .pageSubtitle, .mutedText { max-width: 740px; margin: 0.5rem 0 0; color: var(--text-muted); font-size: 1.02rem; }
 .contentHeader { margin-bottom: 1.4rem; }
 .heading { margin: 0 0 0.8rem; font-size: clamp(1.25rem, 2.7vw, 1.65rem); line-height: 1.35; font-weight: 700; }
@@ -107,6 +108,7 @@ h1, h2, h3, .heading, .pageTitle, .mobileMenuTitle, .logo a { font-family: var(-
 .moreLink { margin-left: 0.5rem; color: var(--accent); font-weight: 600; text-underline-offset: 0.16em; }
 .resourceGrid { display: grid; grid-template-columns: 1fr; gap: 1rem; }
 .resourceCard { display: block; padding: 1.1rem; border: 1px solid var(--surface-border); border-radius: 12px; background: var(--surface-2); text-decoration: none; }
+.resourceCard h2::before { content: "./"; margin-right: 0.25rem; color: var(--accent); font-weight: 500; }
 .resourceCard h2 { margin: 0 0 0.45rem; font-size: 1.06rem; line-height: 1.5; }
 .resourceCard p { margin: 0; color: var(--text-muted); }
 .detailHeader { margin-bottom: 1.5rem; }
@@ -128,6 +130,7 @@ h1, h2, h3, .heading, .pageTitle, .mobileMenuTitle, .logo a { font-family: var(-
 .tags { display: flex; flex-wrap: wrap; gap: 0.35rem; }
 .tag { display: inline-block; padding: 0.2rem 0.45rem; border-radius: 999px; background: rgba(71, 194, 255, 0.16); color: #d3eeff; font-size: 0.76rem; line-height: 1.2; }
 .externalButton { display: inline-block; margin-top: 1.5rem; padding: 0.6rem 1rem; border: 1px solid rgba(63, 213, 255, 0.36); border-radius: 10px; background: rgba(63, 213, 255, 0.14); color: var(--text-primary); font-weight: 700; text-decoration: none; }
+.externalButton::before { content: "$ "; color: var(--accent); }
 .externalButton:hover { background: rgba(63, 213, 255, 0.22); }
 
 @media (min-width: 720px) { .resourceGrid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
