@@ -108,6 +108,7 @@ h1, h2, h3, .heading, .pageTitle, .eyebrow, .mobileMenuTitle, .logo a { font-fam
 .interestLinks { margin: 0.75rem 0 0; padding-left: 1.25rem; }
 .interestLinks a { color: var(--accent); text-underline-offset: 0.16em; }
 .interestLinks a:hover { color: var(--accent-strong); }
+.certificationList { margin: 0.75rem 0 0; padding-left: 1.25rem; }
 .detailImage { width: min(100%, 280px); margin: 0 0 1.25rem; border-radius: 12px; object-fit: cover; }
 .detailMeta { color: var(--text-muted); }
 
