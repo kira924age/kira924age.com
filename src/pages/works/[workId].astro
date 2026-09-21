@@ -31,7 +31,7 @@ const { work } = Astro.props;
       <p class="detailDescription">{work.shortDescription}</p>
     </header>
     <section class="detailSection"><h2>Overview</h2><p>{work.overview}</p></section>
-    <section class="detailSection"><h2>Tech Stack</h2><div class="tags">{work.technologies.map((tech) => <span class="tag">{tech}</span>)}</div></section>
+    <section class="detailSection"><h2>Tech Stack &amp; Services</h2><div class="tags">{work.technologies.map((tech) => <span class="tag">{tech}</span>)}</div></section>
     {work.liveUrl && <section class="detailSection"><h2>Live URL</h2><a href={work.liveUrl} target="_blank" rel="noopener noreferrer">{work.liveUrl}</a></section>}
     <a class="externalButton" href={work.repositoryUrl} target="_blank" rel="noopener noreferrer">View on GitHub</a>
   </div>

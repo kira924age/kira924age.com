@@ -10,6 +10,24 @@ export type Work = {
 
 export const WORKS: Work[] = [
   {
+    id: "kira924age-com",
+    title: "kira924age.com",
+    shortDescription:
+      "A personal website for sharing my projects, profile, and favorite anime, manga, and music.",
+    overview:
+      "This site is a personal hub for my web development work and interests. It brings together project details, profile information, and curated lists of anime, manga, and music in a compact static site.",
+    technologies: [
+      "Astro",
+      "TypeScript",
+      "SCSS",
+      "Cloudflare Pages",
+      "Cloudflare Zaraz",
+      "Google Analytics",
+    ],
+    liveUrl: "https://kira924age.com",
+    repositoryUrl: "https://github.com/kira924age/kira924age.com",
+  },
+  {
     id: "codeforces-problems",
     title: "Codeforces Problems",
     shortDescription:
