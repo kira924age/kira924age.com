@@ -130,7 +130,6 @@ h1, h2, h3, .heading, .pageTitle, .mobileMenuTitle, .logo a { font-family: var(-
 .tags { display: flex; flex-wrap: wrap; gap: 0.35rem; }
 .tag { display: inline-block; padding: 0.2rem 0.45rem; border-radius: 999px; background: rgba(71, 194, 255, 0.16); color: #d3eeff; font-size: 0.76rem; line-height: 1.2; }
 .externalButton { display: inline-block; margin-top: 1.5rem; padding: 0.6rem 1rem; border: 1px solid rgba(63, 213, 255, 0.36); border-radius: 10px; background: rgba(63, 213, 255, 0.14); color: var(--text-primary); font-weight: 700; text-decoration: none; }
-.externalButton::before { content: "$ "; color: var(--accent); }
 .externalButton:hover { background: rgba(63, 213, 255, 0.22); }
 
 @media (min-width: 720px) { .resourceGrid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
