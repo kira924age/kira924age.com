@@ -10,23 +10,18 @@ import { FAVORITE_MANGA_LIST } from "@/constants/manga";
     <header class="contentHeader">
       <h1 class="pageTitle">My Favorite Manga</h1>
       <p class="pageSubtitle">
-        Here are some of the manga that I truly love. Select a title to learn
-        more details!
+        Here are some of the manga that I truly love.
       </p>
     </header>
 
     <div class="cardGrid">
       {FAVORITE_MANGA_LIST.map((manga) => (
-        <a href={`/manga/${manga.id}`} class="cardLink">
-          <article class="favoriteCard">
-            {manga.image && <img src={manga.image.src} alt={manga.name} class="favoriteImage" loading="lazy" decoding="async" />}
-            <div class="cardContent">
-              <h2 class="cardTitle">{manga.name}</h2>
-              {manga.tags && <div class="tags">{manga.tags.map((tag) => <span class="tag">{tag}</span>)}</div>}
-            </div>
-            {manga.copyright && <div class="copyright">{manga.copyright}</div>}
-          </article>
-        </a>
+        <article class="favoriteCard">
+          <div class="cardContent">
+            <h2 class="cardTitle">{manga.name}</h2>
+            {manga.tags && <div class="tags">{manga.tags.map((tag) => <span class="tag">{tag}</span>)}</div>}
+          </div>
+        </article>
       ))}
     </div>
   </div>

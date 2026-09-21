@@ -13,9 +13,9 @@ export const WORKS: Work[] = [
     id: "codeforces-problems",
     title: "Codeforces Problems",
     shortDescription:
-      "A web application to manage your Codeforces Problems. You can check the problems you have solved and the problems you have not solved.",
+      "A web application for organizing Codeforces problems and tracking progress.",
     overview:
-      "This project is a problem management tool for Codeforces users. It helps track solved/unsolved problems and organize daily practice more efficiently.",
+      "Codeforces Problems helps users keep track of solved and unsolved problems, making it easier to organize practice and maintain a consistent study routine.",
     technologies: ["TypeScript", "React", "Web Application"],
     liveUrl: "https://cf.kira924age.com",
     repositoryUrl: "https://github.com/kira924age/CodeforcesProblems",
@@ -24,9 +24,9 @@ export const WORKS: Work[] = [
     id: "vrm-mixamo-viewer-waita",
     title: "vrm-mixamo-viewer-waita",
     shortDescription:
-      "An online tool designed for viewing 3D models in the VRM format. It is also possible to apply animations to the model.",
+      "A browser-based viewer for VRM models with support for applying Mixamo animations.",
     overview:
-      "This viewer is focused on quickly previewing VRM models and testing character motion by applying Mixamo animations directly in the browser.",
+      "This viewer lets users preview VRM characters in the browser and apply Mixamo animations to explore their movement quickly.",
     technologies: ["TypeScript", "3D", "VRM", "WebGL"],
     liveUrl: "https://vrm-viewer.kira924age.com",
     repositoryUrl: "https://github.com/kira924age/vrm-mixamo-viewer-waita",

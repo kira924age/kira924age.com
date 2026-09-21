@@ -1,0 +1,32 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Breadcrumb from "@/components/Breadcrumb/Breadcrumb.astro";
+import { WORKS } from "@/constants/works";
+---
+
+<Layout
+  title="Works | kira924age.com"
+  description="A selection of web applications and tools built by kira924age."
+>
+  <div class="pageContainer">
+    <Breadcrumb items={[{ label: "Home", to: "/" }, { label: "Works" }]} />
+
+    <header class="contentHeader">
+      <h1 class="pageTitle">My Works</h1>
+      <p class="pageSubtitle">
+        I build web applications and tools that turn ideas into useful,
+        approachable experiences. Here is a selection of projects I have worked
+        on.
+      </p>
+    </header>
+
+    <div class="resourceGrid">
+      {WORKS.map((work) => (
+        <a href={`/works/${work.id}`} class="resourceCard">
+          <h2>{work.title}</h2>
+          <p>{work.shortDescription}</p>
+        </a>
+      ))}
+    </div>
+  </div>
+</Layout>

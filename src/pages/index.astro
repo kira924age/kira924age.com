@@ -1,7 +1,6 @@
 ---
 import Layout from "@/layouts/Layout.astro";
 import Breadcrumb from "@/components/Breadcrumb/Breadcrumb.astro";
-import { WORKS } from "@/constants/works";
 ---
 
 <Layout>
@@ -21,14 +20,11 @@ import { WORKS } from "@/constants/works";
 
     <section>
       <h2 class="heading">My works</h2>
-      <div class="resourceGrid">
-        {WORKS.map((work) => (
-          <a href={`/works/${work.id}`} class="resourceCard">
-            <h2>{work.title}</h2>
-            <p>{work.shortDescription}</p>
-          </a>
-        ))}
-      </div>
+      <p class="pageSubtitle">
+        I build web applications and interactive tools with a focus on useful,
+        thoughtful user experiences.
+        <a href="/works" class="moreLink">View my works</a>
+      </p>
     </section>
   </div>
 </Layout>
