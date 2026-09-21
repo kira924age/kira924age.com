@@ -1,6 +1,3 @@
-import type { ImageMetadata } from "astro";
-import theRollingGirlsImgUrl from "@/assets/the-rolling-girls.webp";
-
 export type Anime = {
   id: number;
   name: string;
@@ -8,9 +5,7 @@ export type Anime = {
   tags?: string[];
   impressions?: string;
   dAnimeUrl?: string;
-  image?: ImageMetadata;
   pvUrl?: string;
-  copyright?: string;
 };
 
 export const FAVORITE_ANIME_LIST: Anime[] = [
@@ -29,9 +24,7 @@ export const FAVORITE_ANIME_LIST: Anime[] = [
     impressions: `In this anime, an ordinary protagonist with no special powers becomes caught up in incidents occurring in various places and struggles alongside their comrades.
     They never become the main character; nevertheless, they always play an important role in the story. Even without special powers, even if you can’t be the protagonist, you might still be able to do something. That idea has had a tremendous influence on my philosophy.
         Moreover, it was through this anime that I discovered THE BLUE HEARTS.`,
-    image: theRollingGirlsImgUrl,
     pvUrl: "https://www.youtube.com/embed/OSu2mbjvDgk?si=oxJuOq-DyLqsm5ms",
-    copyright: "© 2015 The Rolling Girls 製作委員会",
     dAnimeUrl: "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11601",
   },
   { id: 48553, name: "明日ちゃんのセーラー服 (Akebi-chan no Sailor-fuku)" },

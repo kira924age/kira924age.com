@@ -19,7 +19,13 @@ const { work } = Astro.props;
 
 <Layout title={`${work.title} | kira924age.com`} description={work.shortDescription}>
   <div class="pageContainer">
-    <Breadcrumb items={[{ label: "Home", to: "/" }, { label: work.title }]} />
+    <Breadcrumb
+      items={[
+        { label: "Home", to: "/" },
+        { label: "Works", to: "/works" },
+        { label: work.title },
+      ]}
+    />
     <header class="detailHeader">
       <h1 class="pageTitle">{work.title}</h1>
       <p class="detailDescription">{work.shortDescription}</p>

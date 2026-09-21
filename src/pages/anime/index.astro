@@ -10,23 +10,18 @@ import { FAVORITE_ANIME_LIST } from "@/constants/anime";
     <header class="contentHeader">
       <h1 class="pageTitle">My Favorite Anime</h1>
       <p class="pageSubtitle">
-        Here are some of the anime series that I truly love. Select a title to
-        learn more details!
+        Here are some of the anime series that I truly love.
       </p>
     </header>
 
     <div class="cardGrid">
       {FAVORITE_ANIME_LIST.map((anime) => (
-        <a href={`/anime/${anime.id}`} class="cardLink">
-          <article class="favoriteCard">
-            {anime.image && <img src={anime.image.src} alt={anime.name} class="favoriteImage" loading="lazy" decoding="async" />}
-            <div class="cardContent">
-              <h2 class="cardTitle">{anime.name}</h2>
-              {anime.tags && <div class="tags">{anime.tags.map((tag) => <span class="tag">{tag}</span>)}</div>}
-            </div>
-            {anime.copyright && <div class="copyright">{anime.copyright}</div>}
-          </article>
-        </a>
+        <article class="favoriteCard">
+          <div class="cardContent">
+            <h2 class="cardTitle">{anime.name}</h2>
+            {anime.tags && <div class="tags">{anime.tags.map((tag) => <span class="tag">{tag}</span>)}</div>}
+          </div>
+        </article>
       ))}
     </div>
   </div>

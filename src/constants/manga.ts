@@ -1,13 +1,6 @@
-import type { ImageMetadata } from "astro";
-import newGameImgUrl from "@/assets/manga/newGame.jpg";
-import mahoshojoNiAkogareteImgUrl from "@/assets/manga/mahoshojo-ni-akogarete.jpg";
-import akebiImgUrl from "@/assets/manga/akebi.jpg";
-
 export type Manga = {
   id: number;
   name: string;
-  image?: ImageMetadata;
-  copyright?: string;
   tags?: string[];
   volume?: number;
 };
@@ -16,25 +9,19 @@ export const FAVORITE_MANGA_LIST: Manga[] = [
   {
     id: 0,
     name: "NEW GAME!",
-    image: newGameImgUrl,
     tags: ["コメディ", "百合", "4コマ", "お仕事", "まんがタイムきらら"],
-    copyright: "© 得能正太郎・芳文社",
     volume: 13,
   },
   {
     id: 1,
     name: "魔法少女にあこがれて",
-    image: mahoshojoNiAkogareteImgUrl,
     tags: ["魔法少女", "百合", "バトル", "ブラック・コメディ"],
-    copyright: "© 小野中彰大・竹書房",
     volume: 11,
   },
   {
     id: 3,
     name: "明日ちゃんのセーラー服",
-    image: akebiImgUrl,
     tags: ["青春", "百合", "学園"],
-    copyright: "© 博・集英社",
     volume: 15,
   },
   { id: 18, name: "ゆゆ式 (Yuyushiki)" },

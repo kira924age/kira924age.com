@@ -32,9 +32,8 @@ const isActive = (path: string) =>
         <nav aria-label="モバイルナビゲーション">
           <ul class="mobileMenuList">
             <li class:list={{ active: isActive("/") }}><a href="/">Home</a></li>
-            <li class:list={{ active: isActive("/anime") }}><a href="/anime">Anime</a></li>
-            <li class:list={{ active: isActive("/manga") }}><a href="/manga">Manga</a></li>
-            <li class:list={{ active: isActive("/music") }}><a href="/music">Music</a></li>
+            <li class:list={{ active: isActive("/about") }}><a href="/about">About</a></li>
+            <li class:list={{ active: isActive("/works") }}><a href="/works">Works</a></li>
           </ul>
         </nav>
         <p class="mobileMenuFooter">Explore the archive</p>
@@ -42,11 +41,12 @@ const isActive = (path: string) =>
     </dialog>
 
     <div class="logo"><a href="/">kira924age.com</a></div>
+
     <nav class="desktopNav" aria-label="メインナビゲーション">
       <ul>
-        <li><a class:list={{ active: isActive("/anime") }} href="/anime">anime</a></li>
-        <li><a class:list={{ active: isActive("/manga") }} href="/manga">manga</a></li>
-        <li><a class:list={{ active: isActive("/music") }} href="/music">music</a></li>
+        <li class:list={{ active: isActive("/") }}><a href="/">Home</a></li>
+        <li class:list={{ active: isActive("/about") }}><a href="/about">About</a></li>
+        <li class:list={{ active: isActive("/works") }}><a href="/works">Works</a></li>
       </ul>
     </nav>
   </div>
