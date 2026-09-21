@@ -63,6 +63,7 @@ const isActive = (path: string) =>
 
   menuTrigger?.addEventListener("click", () => {
     if (!menuDialog?.open) menuDialog?.showModal();
+    menuTrigger.setAttribute("aria-expanded", "true");
   });
 
   menuClose?.addEventListener("click", closeMenu);
@@ -74,8 +75,5 @@ const isActive = (path: string) =>
   });
   menuDialog?.addEventListener("cancel", () => {
     menuTrigger?.setAttribute("aria-expanded", "false");
-  });
-  menuTrigger?.addEventListener("click", () => {
-    menuTrigger.setAttribute("aria-expanded", "true");
   });
 </script>

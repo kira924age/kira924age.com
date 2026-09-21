@@ -50,10 +50,10 @@ body::before {
 }
 
 a { color: inherit; }
-a:focus-visible, summary:focus-visible { outline: none; box-shadow: 0 0 0 2px rgba(71, 194, 255, 0.65); }
+a:focus-visible { outline: none; box-shadow: 0 0 0 2px rgba(71, 194, 255, 0.65); }
 
 main { position: relative; z-index: 1; width: min(100%, 1000px); flex: 1; min-height: 0; margin: 0 auto; padding: 108px 0.9rem 2rem; }
-h1, h2, h3, .heading, .pageTitle, .eyebrow, .mobileMenuTitle, .logo a { font-family: var(--font-display); letter-spacing: 0.02em; }
+h1, h2, h3, .heading, .pageTitle, .mobileMenuTitle, .logo a { font-family: var(--font-display); letter-spacing: 0.02em; }
 
 /* Header */
 .siteHeader { position: fixed; z-index: 1000; top: 0; left: 0; right: 0; height: 88px; display: flex; align-items: center; justify-content: center; padding: 0 0.9rem; background: rgba(5, 10, 17, 0.7); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(63, 213, 255, 0.24); }
@@ -108,7 +108,6 @@ h1, h2, h3, .heading, .pageTitle, .eyebrow, .mobileMenuTitle, .logo a { font-fam
 .interestLinks { margin: 0.75rem 0 0; padding-left: 1.25rem; }
 .interestLinks a { color: var(--accent); text-underline-offset: 0.16em; }
 .interestLinks a:hover { color: var(--accent-strong); }
-.detailImage { width: min(100%, 280px); margin: 0 0 1.25rem; border-radius: 12px; object-fit: cover; }
 .detailMeta { color: var(--text-muted); }
 
 /* Cards */
@@ -118,8 +117,6 @@ h1, h2, h3, .heading, .pageTitle, .eyebrow, .mobileMenuTitle, .logo a { font-fam
 .cardTitle { margin: 0 0 0.55rem; font-size: 1.05rem; line-height: 1.45; font-weight: 700; }
 .tags { display: flex; flex-wrap: wrap; gap: 0.35rem; }
 .tag { display: inline-block; padding: 0.2rem 0.45rem; border-radius: 999px; background: rgba(71, 194, 255, 0.16); color: #d3eeff; font-size: 0.76rem; line-height: 1.2; }
-.impressions { margin: 0; color: var(--text-muted); font-size: 1.03rem; line-height: 2; white-space: pre-wrap; }
-.media iframe { width: 100%; aspect-ratio: 16 / 9; border: 1px solid var(--surface-border); border-radius: 12px; background: #000; }
 .externalButton { display: inline-block; margin-top: 1.5rem; padding: 0.6rem 1rem; border: 1px solid rgba(63, 213, 255, 0.36); border-radius: 10px; background: rgba(63, 213, 255, 0.14); color: var(--text-primary); font-weight: 700; text-decoration: none; }
 .externalButton:hover { background: rgba(63, 213, 255, 0.22); }
 
