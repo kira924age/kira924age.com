@@ -22,6 +22,11 @@ pnpm build
 
 The production build can be previewed locally with `pnpm preview`.
 
+## HTML panel agent
+
+The shared layout loads `@urth/three-html-panel` 0.2.6's agent for all pages.
+The agent's host origin is fixed to `https://metatell-dev.app`.
+
 ## How to deploy
 
 This project is deployed using Cloudflare Pages.
