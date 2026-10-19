@@ -12,8 +12,8 @@ importers:
   .:
     dependencies:
       '@urth/three-html-panel':
-        specifier: 0.2.6
-        version: 0.2.6(three@0.186.1)
+        specifier: 0.3.0
+        version: 0.3.0(three@0.186.1)
     devDependencies:
       '@astrojs/check':
         specifier: 0.9.10
@@ -796,8 +796,8 @@ packages:
   '@ungap/structured-clone@1.4.0':
     resolution: {integrity: sha512-1mEZtMKPM09vDmQt5y7YvmN2+DFTP7Tg0EWXdic8/C6VRnpb33e4ghisCIE3WZjsE2N8mf+QV1Zqh7ZFYLWInQ==}
 
-  '@urth/three-html-panel@0.2.6':
-    resolution: {integrity: sha512-qhmKHatkvgWx04JJsD19VMCFBJ4uQb9ZD5r4Z9/yM3ufnObEYoMQghDScrQE6fif14xcUS/4BKyDHCqi8XyBVg==}
+  '@urth/three-html-panel@0.3.0':
+    resolution: {integrity: sha512-E3R4tPAHrLMRc+NadachY4NLy+x0r66hcqM22COGiB1McpACRfRlSbWNJzN5WH7siOR9up6ToRAjdtkLJqOf2w==}
     peerDependencies:
       three: '>=0.158.0'
 
@@ -2436,7 +2436,7 @@ snapshots:
 
   '@ungap/structured-clone@1.4.0': {}
 
-  '@urth/three-html-panel@0.2.6(three@0.186.1)':
+  '@urth/three-html-panel@0.3.0(three@0.186.1)':
     dependencies:
       three: 0.186.1
 

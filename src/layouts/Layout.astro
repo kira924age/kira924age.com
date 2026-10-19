@@ -24,7 +24,10 @@ const ogImageUrl = new URL("/og-image.png", Astro.site);
     <script>
       import { startAgent } from "@urth/three-html-panel/agent";
 
-      startAgent({ hostOrigin: "https://urth.metatell-dev.app" });
+      startAgent({
+        hostOrigin:
+          "https://local.metatell-dev.app https://urth.metatell-dev.app https://urth.metatell-stg.app https://urth.metatell.app",
+      });
     </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />

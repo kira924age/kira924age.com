@@ -24,8 +24,13 @@ The production build can be previewed locally with `pnpm preview`.
 
 ## HTML panel agent
 
-The shared layout loads `@urth/three-html-panel` 0.2.6's agent for all pages.
-The agent's host origin is fixed to `https://urth.metatell-dev.app`.
+The shared layout loads `@urth/three-html-panel` 0.3.0's agent for all pages.
+The agent allows these host origins, configured as a space-separated list:
+
+- `https://local.metatell-dev.app`
+- `https://urth.metatell-dev.app`
+- `https://urth.metatell-stg.app`
+- `https://urth.metatell.app`
 
 ## How to deploy
 

@@ -25,6 +25,6 @@
     "typescript": "6.0.3"
   },
   "dependencies": {
-    "@urth/three-html-panel": "0.2.6"
+    "@urth/three-html-panel": "0.3.0"
   }
 }
